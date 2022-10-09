@@ -17,7 +17,7 @@
 
 module Top_Student (
     input baysis_clock,
-    input sw0, btnU,
+    input  btnU,
     output reg [11:0] led,
     output led14,
     input  J_MIC3_Pin3,   // Connect from this signal to Audio_Capture.v
@@ -27,26 +27,18 @@ module Top_Student (
     );
 
     wire wire_clk20k;
-    wire wire_clk10;
     wire wire_clk6p25m;
-    wire clock_to_use;
     wire [11:0] MIC_in;
     
     CLOCK_flexible unit_20khz(baysis_clock, 2499, wire_clk20k);
-    CLOCK_flexible unit_10hz(baysis_clock, 4999999, wire_clk10);
     Audio_Capture unit_audio(baysis_clock,wire_clk20k,J_MIC3_Pin3,J_MIC3_Pin1,J_MIC3_Pin4,MIC_in);
-    
-    assign clock_to_use = (sw0 == 1) ? wire_clk10 : wire_clk20k;
-    
-    
-    
     CLOCK_flexible unit_6p25m(baysis_clock, 7, wire_clk6p25m);
     
     wire fbegin;
     wire [12:0] pixel_index;
     wire sendpix;
     wire samplepix;
-    reg [15:0] oled_data; 
+    reg [15:0] oled_data = 0; 
     
     Oled_Display(.clk(wire_clk6p25m), .reset(0),
     .frame_begin(fbegin), .sending_pixels(sendpix), .sample_pixel(samplepix),
@@ -56,11 +48,8 @@ module Top_Student (
     .teststate(0));
     
     
-     always @(posedge clock_to_use) begin
+     always @(posedge wire_clk20k) begin
        led <= MIC_in;
-//       oled_data[15:11] <= 0;
-//       oled_data[10:5] <= MIC_in[11:6];
-//       oled_data[4:0] <= MIC_in[11:7];
        end
        
      wire [6:0] x;
@@ -124,6 +113,14 @@ module Top_Student (
      else if ((y == 18 || y == 45) && (x > 17 && x < 78) && state[3] == 1)//end of green 4
      begin
      oled_data <= 16'b0000011111100000;
+     end
+     else if (x == 95) //test can remove
+     begin
+     oled_data <= 16'b0000000000011111;
+     end
+     else if (y == 63) //test can remove
+     begin
+     oled_data <= 16'b0000000000011111;
      end
      else //default to black
         begin
