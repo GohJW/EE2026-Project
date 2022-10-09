@@ -1,0 +1,9 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Project/SoundDisplay/SoundDisplay/SoundDisplay.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sim_1/new/CLOCK_20khz_sim.v,1664519795,verilog,,,,CLOCK_20khz_sim,,,,,,,,
+C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sim_1/new/OLED_button_test.v,1665311599,verilog,,,,OLED_button_test,,,,,,,,
+C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/CLOCK_20khz.v,1664523862,verilog,,C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sim_1/new/CLOCK_20khz_sim.v,,CLOCK_flexible,,,,,,,,
+C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sources_1/new/OLED_button.v,1665312114,verilog,,C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Project/SoundDisplay/SoundDisplay/SoundDisplay.srcs/sim_1/new/OLED_button_test.v,,OLED_button,,,,,,,,
