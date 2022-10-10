@@ -1,0 +1,357 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 15396
+License: Customer
+
+Current time: 	Mon Oct 10 18:46:00 SGT 2022
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 44 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Shayer Ahmed
+User home directory: C:/Users/Shayer Ahmed
+User working directory: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Shayer Ahmed/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Shayer Ahmed/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Shayer Ahmed/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/vivado.log
+Vivado journal file location: 	C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/vivado.jou
+Engine tmp dir: 	C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/.Xil/Vivado-15396-shay
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	207 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 491 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 65 MB (+65475kb) [00:00:19]
+// [Engine Memory]: 477 MB (+348854kb) [00:00:19]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Shayer Ahmed\Documents\GitHub\EE2026-Project\SoundDisplay.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 508 MB (+7393kb) [00:00:22]
+// HMemoryUtils.trashcanNow. Engine heap size: 529 MB. GUI used memory: 41 MB. Current time: 10/10/22 6:46:03 PM SGT
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 549 MB (+16556kb) [00:00:29]
+// Tcl Message: open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 800.445 ; gain = 59.039 
+// [Engine Memory]: 584 MB (+8017kb) [00:00:35]
+// Project name: SoundDisplay; location: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 599 MB. GUI used memory: 42 MB. Current time: 10/10/22 6:46:18 PM SGT
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (Top_Student.v) elapsed time: 0.4s
+// Elapsed time: 70 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectCodeEditor("Top_Student.v", 436, 262); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 167, 280); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 174, 368); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 457, 447); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 119, 383); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 115, 443); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 117, 420); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 120, 481); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 99, 446); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 97, 463); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 104, 546); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 96, 537); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 89, 396); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 95, 401); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 97, 470); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 102, 536); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 90, 451); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 96, 455); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 95, 513); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 95, 334); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 97, 402); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 121, 475); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 383, 259); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 145, 244); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 213, 241); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 57, 265); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 198, 248); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 187, 329); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 230, 124); // ce (w, ck)
+// [GUI Memory]: 75 MB (+6946kb) [00:03:04]
+// [GUI Memory]: 79 MB (+730kb) [00:03:14]
+// Elapsed time: 16 seconds
+selectCodeEditor("Top_Student.v", 252, 266); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 279, 134); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 291, 147); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 261, 120); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 249, 106); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 336, 184); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 329, 322); // ce (w, ck)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 246ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 46 seconds
+selectCodeEditor("Top_Student.v", 164, 457); // ce (w, ck)
+// [GUI Memory]: 83 MB (+285kb) [00:04:19]
+// Elapsed time: 66 seconds
+selectCodeEditor("Top_Student.v", 76, 331); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 162, 340); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 143, 324); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 80, 330); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 267, 378); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 23 seconds
+selectCodeEditor("Top_Student.v", 210, 300); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 233, 317); // ce (w, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10); // B (D, ck)
+// [GUI Memory]: 89 MB (+1334kb) [00:06:06]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 12, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Basys3_Master.xdc", 424, 241); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 403, 239); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 311, 228); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 316, 232); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 371, 245); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 386, 240); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 557, 325); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 466, 251); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 431, 472); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Basys3_Master.xdc", 331, 354); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 195, 195); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 235, 353); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_Student.v", 329, 379); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 614 MB (+703kb) [00:06:54]
+// Elapsed time: 18 seconds
+selectCodeEditor("Top_Student.v", 172, 535); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 209, 494); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 237, 540); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 616 MB. GUI used memory: 44 MB. Current time: 10/10/22 6:53:18 PM SGT
+// Elapsed time: 30 seconds
+selectCodeEditor("Top_Student.v", 271, 378); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 386, 465); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 262, 386); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 282, 401); // ce (w, ck)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 374ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 16 seconds
+selectCodeEditor("Top_Student.v", 113, 419); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 113, 419, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 139, 418); // ce (w, ck)
+// Elapsed time: 48 seconds
+selectCodeEditor("Top_Student.v", 210, 348); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 229, 274); // ce (w, ck)
+// Elapsed time: 67 seconds
+selectCodeEditor("Top_Student.v", 283, 335); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 418, 335); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 200, 328); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 271, 330); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 385, 336); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 420, 341); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 460, 331); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("Top_Student.v", 436, 416); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 380, 334); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 443, 331); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 448, 331); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 282, 331); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 442, 326); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 499, 427); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 418, 333); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 178, 334); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 335, 327); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 355, 333); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 337, 345); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 183, 193); // ce (w, ck)
+// [GUI Memory]: 94 MB (+740kb) [00:11:52]
+// Elapsed time: 13 seconds
+selectCodeEditor("Top_Student.v", 173, 351); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 167, 346); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 175, 350); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 293, 344); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 299, 351); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 478, 398); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 144, 349); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 164, 349); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 258, 350); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 281, 343); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 559, 347); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 345, 386); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 504, 390); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("Top_Student.v", 417, 194); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 137, 301); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 178, 522); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 164, 497); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 216, 382); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 216, 382, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 182, 385); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 182, 385, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 222, 416); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 240, 401); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 230, 431); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 229, 432, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 16 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 30 seconds
+selectCodeEditor("Top_Student.v", 99, 545); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 114, 364); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 225, 366); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 62, 399); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 60, 450); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 246, 394); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 90, 436); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 88, 445); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 62, 464); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 57, 485); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 279, 486); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 59, 532); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 92, 519); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 64, 535); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 32, 551); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 66, 319); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 91, 324); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 84, 277); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 86, 454); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 35, 470); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 87, 465); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 36, 522); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 122, 491); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 324, 523); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 148, 545); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 168, 332); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 169, 327); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 174, 331); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 174, 347); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 177, 420); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 126, 497); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_Student.v", 369, 426); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 99 MB (+117kb) [00:15:31]
+// Elapsed time: 30 seconds
+selectCodeEditor("Top_Student.v", 287, 129); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 367, 211); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("Top_Student.v", 370, 261); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 293, 288); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 174, 410); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("Top_Student.v", 151, 354); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 128, 397); // ce (w, ck)
+// Elapsed time: 59 seconds
+selectCodeEditor("Top_Student.v", 342, 392); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 319, 370); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 260, 386); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 235, 411); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 232, 389); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 241, 403); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 139, 408); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 136, 403); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 112, 398); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 111, 396, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 117, 397); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 219, 385); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 233, 401); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 166, 421); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 138, 452); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 170, 476); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 165, 470); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 348, 415); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 348, 464); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 421, 381); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 201, 416); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 270, 417); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 192, 463); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 270, 475); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 407, 456); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
