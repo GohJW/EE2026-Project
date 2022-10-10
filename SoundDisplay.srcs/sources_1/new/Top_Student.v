@@ -17,9 +17,9 @@
 
 module Top_Student (
     input baysis_clock,
-    input  btnU,
+    input  btnU, btnD,
     output reg [11:0] led,
-    output led14,
+    output led12, led14,
     input  J_MIC3_Pin3,   // Connect from this signal to Audio_Capture.v
     output J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
     output J_MIC3_Pin4,    // Connect to this signal from Audio_Capture.v
@@ -49,7 +49,7 @@ module Top_Student (
     
     
      always @(posedge wire_clk20k) begin
-       led <= MIC_in;
+       led[11:0] <= MIC_in;
        end
        
      wire [6:0] x;
@@ -57,8 +57,11 @@ module Top_Student (
      coordinates unitc(pixel_index, x, y);
      
      wire delay_A;
+     wire delay_B;
      OLED_button unitA(btnU, baysis_clock, 299999999, delay_A);
+     OLED_button unitB(btnD, baysis_clock, 499999999, delay_B);
      assign led14 = delay_A;
+     assign led12 = delay_B;
      
      reg [3:0] state = 4'b00000;
      
@@ -127,6 +130,8 @@ module Top_Student (
         oled_data <= 16'b0000000000000000;
         end
      end
+     
+     
     
     
     
