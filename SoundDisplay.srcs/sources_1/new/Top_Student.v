@@ -39,21 +39,14 @@ module Top_Student (
     wire [12:0] pixel_index;
     wire sendpix;
     wire samplepix;
-    reg [15:0] oled_data = 0;
+    wire [15:0] oled_data = 0;
     reg [15:0] oled_data_A = 0;
     reg [15:0] oled_data_B = 0;
     
     Oled_Display(.clk(wire_clk6p25m), .reset(0),
     .frame_begin(fbegin), .sending_pixels(sendpix), .sample_pixel(samplepix),
     .pixel_index(pixel_index),
-    .pixel_data(oled_data_A),
-    .cs(rgb_cs), .sdin(rgb_sdin), .sclk(rgb_sclk), .d_cn(rgb_d_cn), .resn(rgb_resn), .vccen(rgb_vccen), .pmoden(rgb_pmoden),
-    .teststate(0));
-    
-    Oled_Display(.clk(wire_clk6p25m), .reset(0),
-    .frame_begin(fbegin), .sending_pixels(sendpix), .sample_pixel(samplepix),
-    .pixel_index(pixel_index),
-    .pixel_data(oled_data_B),
+    .pixel_data(oled_data),
     .cs(rgb_cs), .sdin(rgb_sdin), .sclk(rgb_sclk), .d_cn(rgb_d_cn), .resn(rgb_resn), .vccen(rgb_vccen), .pmoden(rgb_pmoden),
     .teststate(0));
     
@@ -70,16 +63,24 @@ module Top_Student (
      wire delay_B;
      OLED_button unitA(btnU, baysis_clock, 299999999, delay_A);
      OLED_button unitB(btnD, baysis_clock, 499999999, delay_B);
+     
+     
      assign led14 = delay_A;
      assign led12 = delay_B;
-     wire delay;
+//     wire delay;
+//     assign delay = (sw1==1) ? delay_B : (sw0==1) ? delay_A : 0;
      
-     assign delay = sw0 ? delay_A : sw1 ? delay_B  : 0;
+     reg [3:0] state_A = 4'b0000;
+     reg [2:0] state_B = 3'b000;
      
-     reg [3:0] state = 4'b00000;
+     assign oled_data = (sw1 == 1) ? oled_data_B : (sw0 == 1) ? oled_data_A : 0;
      
-     always @ (posedge delay) begin
-     state <= (state == 4'b1111) ? 0: (state << 1) + 1;
+     always @(posedge delay_A) begin
+        state_A <= (state_A == 4'b1111) ? 0 : (state_A << 1) + 1;
+     end
+     
+     always @ (posedge delay_B) begin
+     state_B <= (state_B == 3'b111) ? 0: (state_B << 1) + 1;
      end
      
      always @(posedge wire_clk6p25m) begin
@@ -99,35 +100,35 @@ module Top_Student (
         begin
         oled_data_A <= 16'b1111110100000000;
         end
-     else if ((x == 9 || x == 86) && (y > 8 && y < 55) && state[0] == 1) //start of green 1
+     else if ((x == 9 || x == 86) && (y > 8 && y < 55) && state_A[0] == 1) //start of green 1
      begin
      oled_data_A <= 16'b0000011111100000;
      end
-     else if ((y == 9 || y == 54) && (x > 8 && x < 87) && state[0] == 1)//end of green 1
+     else if ((y == 9 || y == 54) && (x > 8 && x < 87) && state_A[0] == 1)//end of green 1
      begin
      oled_data_A <= 16'b0000011111100000;
      end 
-     else if ((x == 12 || x == 83) && (y > 11 && y < 52) && state[1] == 1) //start of green 2
+     else if ((x == 12 || x == 83) && (y > 11 && y < 52) && state_A[1] == 1) //start of green 2
      begin
      oled_data_A <= 16'b0000011111100000;
      end
-     else if ((y == 12 || y == 51) && (x > 11 && x < 84) && state[1] == 1)//end of green 2
+     else if ((y == 12 || y == 51) && (x > 11 && x < 84) && state_A[1] == 1)//end of green 2
      begin
      oled_data_A <= 16'b0000011111100000;
      end
-     else if ((x == 15 || x == 80) && (y > 14 && y < 49) && state[2] == 1) //start of green 3
+     else if ((x == 15 || x == 80) && (y > 14 && y < 49) && state_A[2] == 1) //start of green 3
      begin
      oled_data_A <= 16'b0000011111100000;
      end
-     else if ((y == 15 || y == 48) && (x > 14 && x < 81) && state[2] == 1)//end of green 3
+     else if ((y == 15 || y == 48) && (x > 14 && x < 81) && state_A[2] == 1)//end of green 3
      begin
      oled_data_A <= 16'b0000011111100000;
      end
-     else if ((x == 18 || x == 77) && (y > 17 && y < 46) && state[3] == 1) //start of green 4
+     else if ((x == 18 || x == 77) && (y > 17 && y < 46) && state_A[3] == 1) //start of green 4
      begin
      oled_data_A <= 16'b0000011111100000;
      end
-     else if ((y == 18 || y == 45) && (x > 17 && x < 78) && state[3] == 1)//end of green 4
+     else if ((y == 18 || y == 45) && (x > 17 && x < 78) && state_A[3] == 1)//end of green 4
      begin
      oled_data_A <= 16'b0000011111100000;
      end
@@ -156,16 +157,19 @@ module Top_Student (
             end
             else if(y >= 37 && y <= 42) 
             begin
-                oled_data_B = 16'hfc65;
+                oled_data_B <= 16'hfc65;
             end
-            else if (y >= 29 && y <= 36 && state[0] == 1)
+            else if (y >= 29 && y <= 34 && state_B[0] == 1)
             begin
+                oled_data_B <= 16'h4ae5;
             end
-            else if (y >= 21 && y <= 28 && state[1] == 1)
+            else if (y >= 21 && y <= 26 && state_B[1] == 1)
             begin
+                oled_data_B <= 16'hc6b4;
             end
-            else if (y >= 13 && y <= 20 && state[2] == 1)
+            else if (y >= 13 && y <= 18 && state_B[2] == 1)
             begin
+                oled_data_B <= 16'hef9b;
             end
         end
         else
@@ -173,6 +177,8 @@ module Top_Student (
          oled_data_B <= 16'b0;
         end   
      end
+     
+
      
      
      
