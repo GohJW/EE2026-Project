@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Tue Oct 11 00:09:21 2022
-| Host         : shay running 64-bit major release  (build 9200)
+| Date         : Tue Oct 11 20:50:27 2022
+| Host         : DESKTOP-D78LMBQ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
 | Design       : Top_Student
 | Device       : 7a35tcpg236-1
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  328 |     0 |     20800 |  1.58 |
-|   LUT as Logic          |  328 |     0 |     20800 |  1.58 |
+| Slice LUTs*             |  402 |     0 |     20800 |  1.93 |
+|   LUT as Logic          |  402 |     0 |     20800 |  1.93 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  277 |     0 |     41600 |  0.67 |
-|   Register as Flip Flop |  277 |     0 |     41600 |  0.67 |
+| Slice Registers         |  285 |     0 |     41600 |  0.69 |
+|   Register as Flip Flop |  285 |     0 |     41600 |  0.69 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
-| F7 Muxes                |    0 |     0 |     16300 |  0.00 |
+| F7 Muxes                |    1 |     0 |     16300 | <0.01 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 277   |          Yes |       Reset |            - |
+| 285   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   14 |     0 |       106 | 13.21 |
+| Bonded IOB                  |   15 |     0 |       106 | 14.15 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -115,7 +115,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    3 |     0 |        32 |  9.38 |
+| BUFGCTRL   |    4 |     0 |        32 | 12.50 |
 | BUFIO      |    0 |     0 |        20 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         5 |  0.00 |
@@ -149,17 +149,18 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  277 |        Flop & Latch |
-| LUT6     |  144 |                 LUT |
-| LUT2     |   66 |                 LUT |
-| LUT3     |   62 |                 LUT |
-| CARRY4   |   60 |          CarryLogic |
-| LUT5     |   51 |                 LUT |
-| LUT4     |   47 |                 LUT |
-| LUT1     |   12 |                 LUT |
+| FDRE     |  285 |        Flop & Latch |
+| LUT6     |  168 |                 LUT |
+| LUT2     |   79 |                 LUT |
+| LUT3     |   78 |                 LUT |
+| LUT5     |   73 |                 LUT |
+| CARRY4   |   66 |          CarryLogic |
+| LUT4     |   61 |                 LUT |
+| LUT1     |   24 |                 LUT |
 | OBUF     |   11 |                  IO |
-| IBUF     |    3 |                  IO |
-| BUFG     |    3 |               Clock |
+| IBUF     |    4 |                  IO |
+| BUFG     |    4 |               Clock |
+| MUXF7    |    1 |               MuxFx |
 +----------+------+---------------------+
 
 

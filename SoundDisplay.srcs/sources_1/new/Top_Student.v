@@ -18,7 +18,7 @@
 module Top_Student (
     input baysis_clock,
     input  btnU, btnD,
-    input sw0, sw1,
+    input sw0,
 //    output reg [11:0] led,
     output led12, led14,
     input  J_MIC3_Pin3,   // Connect from this signal to Audio_Capture.v
@@ -39,7 +39,7 @@ module Top_Student (
     wire [12:0] pixel_index;
     wire sendpix;
     wire samplepix;
-    wire [15:0] oled_data = 0;
+    wire [15:0] oled_data;
     reg [15:0] oled_data_A = 0;
     reg [15:0] oled_data_B = 0;
     
@@ -73,7 +73,7 @@ module Top_Student (
      reg [3:0] state_A = 4'b0000;
      reg [2:0] state_B = 3'b000;
      
-     assign oled_data = (sw1 == 1) ? oled_data_B : (sw0 == 1) ? oled_data_A : 0;
+     assign oled_data = (sw0 == 1) ? oled_data_B : oled_data_A;
      
      always @(posedge delay_A) begin
         state_A <= (state_A == 4'b1111) ? 0 : (state_A << 1) + 1;

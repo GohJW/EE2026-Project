@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Tue Oct 11 00:12:48 2022
-| Host         : shay running 64-bit major release  (build 9200)
+| Date         : Tue Oct 11 20:52:35 2022
+| Host         : DESKTOP-D78LMBQ running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_Student_methodology_drc_routed.rpt -pb Top_Student_methodology_drc_routed.pb -rpx Top_Student_methodology_drc_routed.rpx
 | Design       : Top_Student
 | Device       : xc7a35tcpg236-1
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 137
+             Violations found: 145
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 130        |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 138        |
 | TIMING-18 | Warning  | Missing input or output delay | 7          |
 +-----------+----------+-------------------------------+------------+
 
@@ -610,75 +610,115 @@ Related violations: <none>
 
 TIMING-17#116 Warning
 Non-clocked sequential cell  
-The clock pin oled_data_B_reg[0]/C is not reached by a timing clock
+The clock pin oled_data_A_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#117 Warning
 Non-clocked sequential cell  
-The clock pin oled_data_B_reg[10]/C is not reached by a timing clock
+The clock pin oled_data_A_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#118 Warning
 Non-clocked sequential cell  
-The clock pin oled_data_B_reg[11]/C is not reached by a timing clock
+The clock pin oled_data_A_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#119 Warning
 Non-clocked sequential cell  
-The clock pin oled_data_B_reg[12]/C is not reached by a timing clock
+The clock pin oled_data_A_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#120 Warning
 Non-clocked sequential cell  
-The clock pin oled_data_B_reg[13]/C is not reached by a timing clock
+The clock pin oled_data_B_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#121 Warning
 Non-clocked sequential cell  
-The clock pin oled_data_B_reg[14]/C is not reached by a timing clock
+The clock pin oled_data_B_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#122 Warning
 Non-clocked sequential cell  
-The clock pin oled_data_B_reg[15]/C is not reached by a timing clock
+The clock pin oled_data_B_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#123 Warning
 Non-clocked sequential cell  
-The clock pin oled_data_B_reg[4]/C is not reached by a timing clock
+The clock pin oled_data_B_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#124 Warning
 Non-clocked sequential cell  
-The clock pin oled_data_B_reg[5]/C is not reached by a timing clock
+The clock pin oled_data_B_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#125 Warning
 Non-clocked sequential cell  
-The clock pin oled_data_B_reg[6]/C is not reached by a timing clock
+The clock pin oled_data_B_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#126 Warning
 Non-clocked sequential cell  
-The clock pin oled_data_B_reg[8]/C is not reached by a timing clock
+The clock pin oled_data_B_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#127 Warning
 Non-clocked sequential cell  
-The clock pin oled_data_B_reg[9]/C is not reached by a timing clock
+The clock pin oled_data_B_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#128 Warning
 Non-clocked sequential cell  
-The clock pin state_B_reg[0]/C is not reached by a timing clock
+The clock pin oled_data_B_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#129 Warning
 Non-clocked sequential cell  
-The clock pin state_B_reg[1]/C is not reached by a timing clock
+The clock pin oled_data_B_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#130 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_B_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#131 Warning
+Non-clocked sequential cell  
+The clock pin oled_data_B_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#132 Warning
+Non-clocked sequential cell  
+The clock pin state_A_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#133 Warning
+Non-clocked sequential cell  
+The clock pin state_A_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#134 Warning
+Non-clocked sequential cell  
+The clock pin state_A_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#135 Warning
+Non-clocked sequential cell  
+The clock pin state_A_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#136 Warning
+Non-clocked sequential cell  
+The clock pin state_B_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#137 Warning
+Non-clocked sequential cell  
+The clock pin state_B_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#138 Warning
 Non-clocked sequential cell  
 The clock pin state_B_reg[2]/C is not reached by a timing clock
 Related violations: <none>
