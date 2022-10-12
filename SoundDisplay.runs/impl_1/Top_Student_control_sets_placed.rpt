@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Oct 12 22:40:36 2022
-| Host         : DESKTOP-D78LMBQ running 64-bit major release  (build 9200)
+| Date         : Thu Oct 13 02:33:09 2022
+| Host         : shay running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
 | Design       : Top_Student
 | Device       : xc7a35t
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    24 |
-| Unused register locations in slices containing registers |    54 |
+| Number of unique control sets                            |    19 |
+| Unused register locations in slices containing registers |    36 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,12 +34,10 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      2 |            5 |
-|      4 |            1 |
-|      6 |            2 |
-|      8 |            1 |
-|     14 |            1 |
-|    16+ |           14 |
+|      2 |            3 |
+|      6 |            1 |
+|     14 |            2 |
+|    16+ |           13 |
 +--------+--------------+
 
 
@@ -49,45 +47,40 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              88 |           17 |
+| No           | No                    | No                     |              64 |           12 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             336 |           48 |
-| Yes          | No                    | No                     |             128 |           16 |
+| No           | Yes                   | No                     |             340 |           48 |
+| Yes          | No                    | No                     |             118 |           18 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             162 |           25 |
+| Yes          | Yes                   | No                     |             162 |           22 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------+---------------------------------------------+------------------------------------------+------------------+----------------+
-|         Clock Signal         |                Enable Signal                |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
-+------------------------------+---------------------------------------------+------------------------------------------+------------------+----------------+
-|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/led[1]_i_2_n_0                       | unitAV/led[1]_i_1_n_0                    |                1 |              2 |
-|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/led[3]_i_2_n_0                       | unitAV/led[3]_i_1_n_0                    |                1 |              2 |
-|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/led[0]_i_2_n_0                       | unitAV/led[0]_i_1_n_0                    |                1 |              2 |
-|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/led[2]_i_2_n_0                       | unitAV/led[2]_i_1_n_0                    |                1 |              2 |
-|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/led[4]_i_2_n_0                       | unitAV/led[4]_i_1_n_0                    |                1 |              2 |
-| ~wire_clk6p25m_BUFG          |                                             |                                          |                2 |              4 |
-|  wire_clk6p25m_BUFG          |                                             |                                          |                2 |              6 |
-|  led12_OBUF_BUFG             |                                             |                                          |                1 |              6 |
-|  led14_OBUF_BUFG             |                                             |                                          |                1 |              8 |
-|  baysis_clock_IBUF_BUFG      |                                             |                                          |                5 |             14 |
-|  wire_clk6p25m_BUFG          | unitc/E[0]                                  |                                          |                4 |             24 |
-|  baysis_clock_IBUF_BUFG      |                                             | J_MIC3_Pin1_OBUF_BUFG                    |                3 |             24 |
-|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/p_0_in                               | unitAV/peak                              |                4 |             24 |
-| ~unit_audio/J_MIC3_Pin4_OBUF |                                             |                                          |                2 |             24 |
-|  J_MIC3_Pin1_OBUF_BUFG       |                                             |                                          |                4 |             26 |
-| ~wire_clk6p25m_BUFG          |                                             | nolabel_line46/frame_counter[16]_i_1_n_0 |                4 |             32 |
-| ~wire_clk6p25m_BUFG          | nolabel_line46/delay[0]_i_1_n_0             |                                          |                5 |             40 |
-|  J_MIC3_Pin1_OBUF_BUFG       |                                             | unitAV/peak                              |                8 |             62 |
-| ~wire_clk6p25m_BUFG          | nolabel_line46/FSM_onehot_state[31]_i_1_n_0 |                                          |                7 |             64 |
-|  baysis_clock_IBUF_BUFG      |                                             | unit_20khz/COUNT[0]_i_1__0_n_0           |                8 |             64 |
-|  baysis_clock_IBUF_BUFG      |                                             | unit_6p25m/clear                         |                8 |             64 |
-|  baysis_clock_IBUF_BUFG      | led12_OBUF_BUFG                             | unitB/count                              |                8 |             64 |
-|  baysis_clock_IBUF_BUFG      | led14_OBUF_BUFG                             | unitA/count                              |                8 |             64 |
-| ~wire_clk6p25m_BUFG          |                                             | nolabel_line46/spi_word[39]_i_1_n_0      |               17 |             90 |
-+------------------------------+---------------------------------------------+------------------------------------------+------------------+----------------+
++------------------------------+---------------------------------+------------------------------------------+------------------+----------------+
+|         Clock Signal         |          Enable Signal          |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++------------------------------+---------------------------------+------------------------------------------+------------------+----------------+
+|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/led[0]_i_2_n_0           | unitAV/led[0]_i_1_n_0                    |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/led[1]_i_2_n_0           | unitAV/led[1]_i_1_n_0                    |                1 |              2 |
+| ~wire_clk6p25m_BUFG          |                                 |                                          |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/led[4]_i_2_n_0           | unitAV/led[4]_i_1_n_0                    |                1 |              6 |
+|  baysis_clock_IBUF_BUFG      |                                 |                                          |                5 |             14 |
+|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/peak                     |                                          |                2 |             14 |
+|  baysis_clock_IBUF_BUFG      |                                 | J_MIC3_Pin1_OBUF_BUFG                    |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG       |                                 |                                          |                4 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/peak2_carry__0_n_5       | unitAV/peak                              |                3 |             24 |
+| ~unit_audio/J_MIC3_Pin4_OBUF |                                 |                                          |                2 |             24 |
+| ~wire_clk6p25m_BUFG          |                                 | nolabel_line49/frame_counter[16]_i_1_n_0 |                5 |             34 |
+| ~wire_clk6p25m_BUFG          | nolabel_line49/delay[0]_i_1_n_0 |                                          |                5 |             40 |
+|  baysis_clock_IBUF_BUFG      |                                 | unit_20khz/clear                         |                8 |             64 |
+|  baysis_clock_IBUF_BUFG      |                                 | unit_6p25m/COUNT[0]_i_1__0_n_0           |                8 |             64 |
+|  baysis_clock_IBUF_BUFG      | unitA/led14_OBUF                | unitA/count                              |                8 |             64 |
+|  baysis_clock_IBUF_BUFG      | unitB/led12_OBUF                | unitB/count                              |                8 |             64 |
+|  J_MIC3_Pin1_OBUF_BUFG       |                                 | unitAV/peak                              |                9 |             64 |
+| ~wire_clk6p25m_BUFG          | nolabel_line49/state            |                                          |               11 |             64 |
+| ~wire_clk6p25m_BUFG          |                                 | nolabel_line49/spi_word[39]_i_1_n_0      |               15 |             90 |
++------------------------------+---------------------------------+------------------------------------------+------------------+----------------+
 
 

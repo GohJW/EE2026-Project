@@ -20,6 +20,8 @@ module Top_Student (
     input  btnU, btnD,
     input sw0,
     output [4:0] led,
+    output [3:0] an,
+    output [7:0] seg,
     output led12, led14,
     input  J_MIC3_Pin3,   // Connect from this signal to Audio_Capture.v
     output J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
@@ -40,8 +42,9 @@ module Top_Student (
     wire sendpix;
     wire samplepix;
     wire [15:0] oled_data;
-    reg [15:0] oled_data_A = 0;
-    reg [15:0] oled_data_B = 0;
+    reg [15:0] oled_data_A;
+    reg [15:0] oled_data_B;
+    wire [15:0] oled_data_volume;
     
     Oled_Display(.clk(wire_clk6p25m), .reset(0),
     .frame_begin(fbegin), .sending_pixels(sendpix), .sample_pixel(samplepix),
@@ -73,7 +76,8 @@ module Top_Student (
      reg [3:0] state_A = 4'b0000;
      reg [2:0] state_B = 3'b000;
      
-     assign oled_data = (sw0 == 1) ? oled_data_B : oled_data_A;
+//     assign oled_data = (sw0 == 1) ? oled_data_B : oled_data_A;
+    assign oled_data = oled_data_volume;
      
      always @(posedge delay_A) begin
         state_A <= (state_A == 4'b1111) ? 0 : (state_A << 1) + 1;
@@ -144,8 +148,7 @@ module Top_Student (
         begin
             if(y >= 45 && y <= 50) 
             begin
-                oled_data_B[15:11] <= 5'b11111; // R
-                oled_data_B[10:0] <= 11'b0; // G, B
+                oled_data_B <= 16'b1111100000000000; // R
             end
             else if(y >= 37 && y <= 42) 
             begin
@@ -170,7 +173,14 @@ module Top_Student (
         end   
      end
      
-     AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, led[4:0]);
+     wire [4:0]an_volume;
+     wire [7:0]seg_volume;
+     wire [4:0]led_volume;
+     assign led = led_volume;
+     assign seg = seg_volume;
+     assign an = an_volume;
+     
+     AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, an_volume[3:0], seg_volume[7:0], led_volume[4:0], oled_data_volume, x, y);
      
      
      
