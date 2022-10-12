@@ -19,7 +19,7 @@ module Top_Student (
     input baysis_clock,
     input  btnU, btnD,
     input sw0,
-//    output reg [11:0] led,
+    output [4:0] led,
     output led12, led14,
     input  J_MIC3_Pin3,   // Connect from this signal to Audio_Capture.v
     output J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
@@ -132,14 +132,6 @@ module Top_Student (
      begin
      oled_data_A <= 16'b0000011111100000;
      end
-     else if (x == 95) //test can remove
-     begin
-     oled_data_A <= 16'b0000000000011111;
-     end
-     else if (y == 63) //test can remove
-     begin
-     oled_data_A <= 16'b0000000000011111;
-     end
      else //default to black
         begin
         oled_data_A <= 16'b0000000000000000;
@@ -178,7 +170,7 @@ module Top_Student (
         end   
      end
      
-
+     AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, led[4:0]);
      
      
      
