@@ -75,7 +75,7 @@ module Top_Student (
     assign seg = seg_volume;
     assign an = an_volume;
      
-    AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, an_volume, seg_volume, led_volume, oled_data_volume, x, y);
+    AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, wire_clk6p25m, an_volume, seg_volume, led_volume, oled_data_volume, x, y);
     //    assign oled_data = (sw0 == 1) ? oled_data_B : oled_data_A;
     assign oled_data = (sw2 == 1) ? oled_data_volume : (sw1 == 1) ? oled_data_B : (sw0 == 1) ? oled_data_A : 0;
     //    assign oled_data = oled_data_volume;
