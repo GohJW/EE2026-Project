@@ -27,8 +27,8 @@ module AudioVolumeIndicator(
     output reg [7:0] seg,
     output reg [4:0] led,
     output reg [15:0] oled_data,
-    output [6:0] x,
-    output [5:0] y
+    input [6:0] x,
+    input [5:0] y
     );
     reg [11:0] peak = 0;
     reg [31:0]count = 0;
@@ -43,6 +43,9 @@ module AudioVolumeIndicator(
                 led <= 5'b00000;
                 oled_data <= 16'b0;
             end
+            
+            // oled is response when setting without conditions on x and y
+            // 
             else if (peak > 2048 && peak <= 2458) begin // lvl 1
                 seg <= 8'b11111001;
                 led <= 5'b00001;

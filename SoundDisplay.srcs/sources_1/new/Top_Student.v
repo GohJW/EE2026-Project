@@ -18,7 +18,7 @@
 module Top_Student (
     input baysis_clock,
     input  btnU, btnD,
-    input sw0,
+    input sw0, sw1, sw2,
     output [4:0] led,
     output [3:0] an,
     output [7:0] seg,
@@ -53,33 +53,32 @@ module Top_Student (
     .cs(rgb_cs), .sdin(rgb_sdin), .sclk(rgb_sclk), .d_cn(rgb_d_cn), .resn(rgb_resn), .vccen(rgb_vccen), .pmoden(rgb_pmoden),
     .teststate(0));
        
-     wire [6:0] x;
-     wire [5:0] y;
-     coordinates unitc(pixel_index, x, y);
+    wire [6:0] x;
+    wire [5:0] y;
+    coordinates unitc(pixel_index, x, y);
      
-     wire delay_A;
-     wire delay_B;
-     OLED_button unitA(btnU, baysis_clock, 299999999, delay_A);
-     OLED_button unitB(btnD, baysis_clock, 499999999, delay_B);
+    wire delay_A;
+    wire delay_B;
+    OLED_button unitA(btnU, baysis_clock, 299999999, delay_A);
+    OLED_button unitB(btnD, baysis_clock, 499999999, delay_B);
      
-     
-     assign led14 = delay_A;
-     assign led12 = delay_B;
-     
-    assign oled_data = (sw0 == 1) ? oled_data_B : oled_data_A;
-//    assign oled_data = oled_data_volume;
+    assign led14 = delay_A;
+    assign led12 = delay_B;
+    
     oled_taskA A(delay_A, wire_clk6p25m, oled_data_A, x, y);
     oled_taskB B(delay_B, wire_clk6p25m, oled_data_B, x, y);
      
-     wire [4:0]an_volume;
-     wire [7:0]seg_volume;
-     wire [4:0]led_volume;
-     assign led = led_volume;
-     assign seg = seg_volume;
-     assign an = an_volume;
+    wire [4:0]an_volume;
+    wire [7:0]seg_volume;
+    wire [4:0]led_volume;
+    assign led = led_volume;
+    assign seg = seg_volume;
+    assign an = an_volume;
      
-     AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, an_volume[3:0], seg_volume[7:0], led_volume[4:0], oled_data_volume, x, y);
-     
+    AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, an_volume, seg_volume, led_volume, oled_data_volume, x, y);
+    //    assign oled_data = (sw0 == 1) ? oled_data_B : oled_data_A;
+    assign oled_data = (sw2 == 1) ? oled_data_volume : (sw1 == 1) ? oled_data_B : (sw0 == 1) ? oled_data_A : 0;
+    //    assign oled_data = oled_data_volume;
      
      
      
