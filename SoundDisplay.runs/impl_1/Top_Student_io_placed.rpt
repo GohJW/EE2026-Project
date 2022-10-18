@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date                      : Thu Oct 13 22:51:55 2022
+| Date                      : Wed Oct 19 04:19:45 2022
 | Host                      : DESKTOP-D78LMBQ running 64-bit major release  (build 9200)
 | Command                   : report_io -file Top_Student_io_placed.rpt
 | Design                    : Top_Student
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            35 |
+|            39 |
 +---------------+
 
 
@@ -229,8 +229,8 @@ Table of Contents
 | U11        |              | Dedicated  | INIT_B_0                     | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U12        |              | Dedicated  | DONE_0                       | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | U13        |              | High Range | VCCO_14                      | VCCO          |             |      14 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
-| U14        |              | High Range | IO_25_14                     | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| U15        |              | High Range | IO_L23P_T3_A03_D19_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| U14        | led[6]       | High Range | IO_25_14                     | OUTPUT        | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| U15        | led[5]       | High Range | IO_L23P_T3_A03_D19_14        | OUTPUT        | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | U16        | led[0]       | High Range | IO_L23N_T3_A02_D18_14        | OUTPUT        | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | U17        | btnD         | High Range | IO_L18P_T2_A12_D28_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | U18        |              | High Range | IO_L18N_T2_A11_D27_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
@@ -247,8 +247,8 @@ Table of Contents
 | V10        |              | Dedicated  | PROGRAM_B_0                  | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V11        |              | Dedicated  | CFGBVS_0                     | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V12        |              | Dedicated  | M0_0                         | Config        |             |       0 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| V13        |              | High Range | IO_L24P_T3_A01_D17_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| V14        |              | High Range | IO_L24N_T3_A00_D16_14        | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| V13        | led[8]       | High Range | IO_L24P_T3_A01_D17_14        | OUTPUT        | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| V14        | led[7]       | High Range | IO_L24N_T3_A00_D16_14        | OUTPUT        | LVCMOS33    |      14 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | V15        |              | High Range | IO_L21P_T3_DQS_14            | User IO       |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | V16        | sw1          | High Range | IO_L19P_T3_A10_D26_14        | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | V17        | sw0          | High Range | IO_L19N_T3_A09_D25_VREF_14   | INPUT         | LVCMOS33    |      14 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |

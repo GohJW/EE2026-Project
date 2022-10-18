@@ -18,6 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -33,6 +34,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/SoundDisplay.srcs/sources_1/new/AudioVolumeIndicator.v}
   {C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/SoundDisplay.srcs/sources_1/new/Audio_Capture.v}
   {C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/SoundDisplay.srcs/sources_1/new/CLOCK_20khz.v}
+  {C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/SoundDisplay.srcs/sources_1/new/FrequencyIndicator.v}
   {C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/SoundDisplay.srcs/sources_1/new/OLED_button.v}
   {C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/SoundDisplay.srcs/sources_1/new/Oled_Display.v}
   {C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/SoundDisplay.srcs/sources_1/new/coordinates.v}

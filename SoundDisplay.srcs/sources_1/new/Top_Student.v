@@ -19,7 +19,7 @@ module Top_Student (
     input baysis_clock,
     input  btnU, btnD,
     input sw0, sw1, sw2,
-    output [4:0] led,
+    output [8:0] led,
     output [3:0] an,
     output [7:0] seg,
     output led12, led14,
@@ -71,7 +71,7 @@ module Top_Student (
     wire [4:0]an_volume;
     wire [7:0]seg_volume;
     wire [4:0]led_volume;
-    assign led = led_volume;
+    assign led[4:0] = led_volume;
     assign seg = seg_volume;
     assign an = an_volume;
      
@@ -80,10 +80,10 @@ module Top_Student (
     assign oled_data = (sw2 == 1) ? oled_data_volume : (sw1 == 1) ? oled_data_B : (sw0 == 1) ? oled_data_A : 0;
     //    assign oled_data = oled_data_volume;
      
-     
-     
-    
-    
-    
-    
+    wire [31:0] freq;
+    FrequencyIndicator(MIC_in, wire_clk20k,led[5],freq);
+    assign led[6] = (freq > 200) ? 1:0;
+    assign led[7] = (freq > 300) ? 1:0;
+    assign led[8] = (freq > 400) ? 1:0;
+  
 endmodule
