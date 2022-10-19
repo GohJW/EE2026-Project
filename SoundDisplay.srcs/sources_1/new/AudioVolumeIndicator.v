@@ -32,12 +32,14 @@ module AudioVolumeIndicator(
     input [5:0] y
     );
     reg [11:0] peak = 0;
+    reg [11:0] peak_track = 0;
     reg [31:0]count = 0;
     always @ (posedge clock_20k) begin
        count <= count+1;
-       peak <= (peak > mic_in) ? peak: mic_in;
+       peak_track <= (peak_track > mic_in) ? peak_track: mic_in;
         if(count == 2000) begin
-            peak <= mic_in;
+            peak <= peak_track;
+            peak_track <= 0;
             count <= 0;
         end
     end

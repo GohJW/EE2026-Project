@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Oct 19 18:45:50 2022
-| Host         : DESKTOP-D78LMBQ running 64-bit major release  (build 9200)
+| Date         : Thu Oct 20 04:26:32 2022
+| Host         : shay running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_Student_methodology_drc_routed.rpt -pb Top_Student_methodology_drc_routed.pb -rpx Top_Student_methodology_drc_routed.rpx
 | Design       : Top_Student
 | Device       : xc7a35tcpg236-1
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 348
+             Violations found: 360
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 341        |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 353        |
 | TIMING-18 | Warning  | Missing input or output delay | 7          |
 +-----------+----------+-------------------------------+------------+
 
@@ -1585,155 +1585,215 @@ Related violations: <none>
 
 TIMING-17#311 Warning
 Non-clocked sequential cell  
-The clock pin unitAV/seg_reg[1]/C is not reached by a timing clock
+The clock pin unitAV/peak_track_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#312 Warning
 Non-clocked sequential cell  
-The clock pin unitAV/seg_reg[2]/C is not reached by a timing clock
+The clock pin unitAV/peak_track_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#313 Warning
 Non-clocked sequential cell  
-The clock pin unitAV/seg_reg[3]/C is not reached by a timing clock
+The clock pin unitAV/peak_track_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#314 Warning
 Non-clocked sequential cell  
-The clock pin unitAV/seg_reg[3]_lopt_replica/C is not reached by a timing clock
+The clock pin unitAV/peak_track_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#315 Warning
 Non-clocked sequential cell  
-The clock pin unitAV/seg_reg[4]/C is not reached by a timing clock
+The clock pin unitAV/peak_track_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#316 Warning
 Non-clocked sequential cell  
-The clock pin unitAV/seg_reg[5]/C is not reached by a timing clock
+The clock pin unitAV/peak_track_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#317 Warning
 Non-clocked sequential cell  
-The clock pin unitAV/seg_reg[6]/C is not reached by a timing clock
+The clock pin unitAV/peak_track_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#318 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/sample_reg[0]/C is not reached by a timing clock
+The clock pin unitAV/peak_track_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#319 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/sample_reg[10]/C is not reached by a timing clock
+The clock pin unitAV/peak_track_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#320 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/sample_reg[11]/C is not reached by a timing clock
+The clock pin unitAV/peak_track_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#321 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/sample_reg[1]/C is not reached by a timing clock
+The clock pin unitAV/peak_track_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#322 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/sample_reg[2]/C is not reached by a timing clock
+The clock pin unitAV/peak_track_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#323 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/sample_reg[3]/C is not reached by a timing clock
+The clock pin unitAV/seg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#324 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/sample_reg[4]/C is not reached by a timing clock
+The clock pin unitAV/seg_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#325 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/sample_reg[5]/C is not reached by a timing clock
+The clock pin unitAV/seg_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#326 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/sample_reg[6]/C is not reached by a timing clock
+The clock pin unitAV/seg_reg[3]_lopt_replica/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#327 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/sample_reg[7]/C is not reached by a timing clock
+The clock pin unitAV/seg_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#328 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/sample_reg[8]/C is not reached by a timing clock
+The clock pin unitAV/seg_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#329 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/sample_reg[9]/C is not reached by a timing clock
+The clock pin unitAV/seg_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#330 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/temp_reg[0]/C is not reached by a timing clock
+The clock pin unit_audio/sample_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#331 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/temp_reg[10]/C is not reached by a timing clock
+The clock pin unit_audio/sample_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#332 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/temp_reg[11]/C is not reached by a timing clock
+The clock pin unit_audio/sample_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#333 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/temp_reg[1]/C is not reached by a timing clock
+The clock pin unit_audio/sample_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#334 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/temp_reg[2]/C is not reached by a timing clock
+The clock pin unit_audio/sample_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#335 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/temp_reg[3]/C is not reached by a timing clock
+The clock pin unit_audio/sample_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#336 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/temp_reg[4]/C is not reached by a timing clock
+The clock pin unit_audio/sample_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#337 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/temp_reg[5]/C is not reached by a timing clock
+The clock pin unit_audio/sample_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#338 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/temp_reg[6]/C is not reached by a timing clock
+The clock pin unit_audio/sample_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#339 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/temp_reg[7]/C is not reached by a timing clock
+The clock pin unit_audio/sample_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#340 Warning
 Non-clocked sequential cell  
-The clock pin unit_audio/temp_reg[8]/C is not reached by a timing clock
+The clock pin unit_audio/sample_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#341 Warning
+Non-clocked sequential cell  
+The clock pin unit_audio/sample_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#342 Warning
+Non-clocked sequential cell  
+The clock pin unit_audio/temp_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#343 Warning
+Non-clocked sequential cell  
+The clock pin unit_audio/temp_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#344 Warning
+Non-clocked sequential cell  
+The clock pin unit_audio/temp_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#345 Warning
+Non-clocked sequential cell  
+The clock pin unit_audio/temp_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#346 Warning
+Non-clocked sequential cell  
+The clock pin unit_audio/temp_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#347 Warning
+Non-clocked sequential cell  
+The clock pin unit_audio/temp_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#348 Warning
+Non-clocked sequential cell  
+The clock pin unit_audio/temp_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#349 Warning
+Non-clocked sequential cell  
+The clock pin unit_audio/temp_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#350 Warning
+Non-clocked sequential cell  
+The clock pin unit_audio/temp_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#351 Warning
+Non-clocked sequential cell  
+The clock pin unit_audio/temp_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#352 Warning
+Non-clocked sequential cell  
+The clock pin unit_audio/temp_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#353 Warning
 Non-clocked sequential cell  
 The clock pin unit_audio/temp_reg[9]/C is not reached by a timing clock
 Related violations: <none>
