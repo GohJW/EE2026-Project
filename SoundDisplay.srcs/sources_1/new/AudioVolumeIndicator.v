@@ -32,24 +32,25 @@ module AudioVolumeIndicator(
     input [5:0] y
     );
     reg [11:0] peak = 0;
+    reg [11:0] peak_track = 0;
     reg [31:0]count = 0;
-    always @(posedge clock_20k) begin
-        count <= count+1;
-        peak <= (peak > mic_in) ? peak: mic_in;
-        an <= 4'b1110;
-        if(count == 2000)
-        begin
-            peak <= 0;
+    always @ (posedge clock_20k) begin
+       count <= count+1;
+       peak_track <= (peak_track > mic_in) ? peak_track: mic_in;
+        if(count == 2000) begin
+            peak <= peak_track;
+            peak_track <= 0;
             count <= 0;
-        end 
+        end
     end
-    always @(posedge clock_6p25m) begin
+    always @(posedge clock_6p25m) begin 
+      an <= 4'b1110;  
         if (peak <= 2070) begin // lvl 0
             seg <= 8'b11000000;
             led <= 5'b00000;
             oled_data <= 16'b0;
         end 
-        if (peak > 2070 && peak <= 2458) begin // lvl 1
+        if (peak > 2070 && peak <= 2170) begin // lvl 1
             seg <= 8'b11111001;
             led <= 5'b00001;
             if((x == 2 || x == 93) && (y > 1 && y < 62)) begin // start of red
@@ -65,7 +66,7 @@ module AudioVolumeIndicator(
                 oled_data <= 16'b0;
             end
         end
-        if (peak > 2458 && peak <= 2868) begin // lvl 2
+        if (peak > 2170 && peak <= 2270) begin // lvl 2
             seg <= 8'b10100100;
             led <= 5'b00011;
             if((x == 2 || x == 93) && (y > 1 && y < 62)) begin // start of red
@@ -90,7 +91,7 @@ module AudioVolumeIndicator(
                 oled_data <= 16'b0;
             end                
         end
-        if (peak > 2868 && peak <= 3278) begin // lvl 3
+        if (peak > 2270 && peak <= 2370) begin // lvl 3
             seg <= 8'b10110000;
             led <= 5'b00111;
             if((x == 2 || x == 93) && (y > 1 && y < 62)) begin // start of red
@@ -124,7 +125,7 @@ module AudioVolumeIndicator(
                 oled_data <= 16'b0;
             end
         end
-        if (peak > 3278 && peak <= 3686) begin // lvl 4
+        if (peak > 2370 && peak <= 2470) begin // lvl 4
             seg <= 8'b10011001;
             led <= 5'b01111;
             if((x == 2 || x == 93) && (y > 1 && y < 62)) begin // start of red
@@ -194,7 +195,7 @@ module AudioVolumeIndicator(
                 oled_data <= 16'b0;
             end
         end
-        if (peak > 3686) begin // lvl 5
+        if (peak > 2470) begin // lvl 5
             seg <= 8'b10010010;
             led <= 5'b11111;
             if((x == 2 || x == 93) && (y > 1 && y < 62)) begin // start of red
@@ -272,6 +273,6 @@ module AudioVolumeIndicator(
             else begin
                 oled_data <= 16'b0;
             end
-        end
+       end
     end   
 endmodule
