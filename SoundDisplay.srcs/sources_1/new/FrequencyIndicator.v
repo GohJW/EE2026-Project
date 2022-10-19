@@ -30,13 +30,13 @@ module FrequencyIndicator(
     reg[31:0] count = 0;
     reg [31:0] multiply = 0;
     always@ (posedge clk_20k) begin
-    multiply <= MIC_in * 2;
+    multiply <= MIC_in * 10;
     timer <= (timer == 2000) ? 0:timer+1;
-        if(multiply > 4200 && cross == 0) begin
+        if(multiply > 21000 && cross == 0) begin
             cross <= 1;
             count <= count + 1;
         end
-        if(multiply < 4200 && cross == 1) begin
+        if(multiply < 21000 && cross == 1) begin
             cross <= 0;
         end
         if(timer == 2000) begin

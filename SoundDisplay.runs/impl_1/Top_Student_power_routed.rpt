@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Wed Oct 19 16:56:40 2022
+| Date             : Wed Oct 19 18:45:52 2022
 | Host             : DESKTOP-D78LMBQ running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Student_power_routed.rpt -pb Top_Student_power_summary_routed.pb -rpx Top_Student_power_routed.rpx
 | Design           : Top_Student
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1292 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      565 |     20800 |            2.72 |
-|   CARRY4       |    <0.001 |      100 |      8150 |            1.23 |
-|   Register     |    <0.001 |      485 |     41600 |            1.17 |
+| Slice Logic    |    <0.001 |     1309 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      577 |     20800 |            2.77 |
+|   CARRY4       |    <0.001 |      104 |      8150 |            1.28 |
+|   Register     |    <0.001 |      488 |     41600 |            1.17 |
 |   Others       |     0.000 |       25 |       --- |             --- |
 |   BUFG         |     0.000 |        4 |        32 |           12.50 |
 |   F7/F8 Muxes  |     0.000 |        1 |     32600 |           <0.01 |
-| Signals        |    <0.001 |     1028 |       --- |             --- |
+| Signals        |    <0.001 |     1035 |       --- |             --- |
 | I/O            |    <0.001 |       39 |       106 |           36.79 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.075 |          |           |                 |
