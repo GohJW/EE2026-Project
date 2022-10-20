@@ -37,6 +37,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/OLED_button.v}
   {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/Oled_Display.v}
   {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/coordinates.v}
+  {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/freq_display.v}
   {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/oled_taskA.v}
   {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/oled_taskB.v}
   {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/Top_Student.v}

@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12568 
+INFO: Helper process launched with PID 4808 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 356.160 ; gain = 99.199
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 356.391 ; gain = 100.188
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
 INFO: [Synth 8-6157] synthesizing module 'CLOCK_flexible' [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/CLOCK_20khz.v:23]
@@ -92,12 +92,16 @@ INFO: [Synth 8-6157] synthesizing module 'oled_taskB' [C:/Users/Shayer Ahmed/Doc
 INFO: [Synth 8-6155] done synthesizing module 'oled_taskB' (7#1) [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/oled_taskB.v:23]
 INFO: [Synth 8-6157] synthesizing module 'AudioVolumeIndicator' [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/AudioVolumeIndicator.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'AudioVolumeIndicator' (8#1) [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/AudioVolumeIndicator.v:23]
-WARNING: [Synth 8-689] width (5) of port connection 'an' does not match port width (4) of module 'AudioVolumeIndicator' [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/Top_Student.v:78]
+WARNING: [Synth 8-689] width (5) of port connection 'an' does not match port width (4) of module 'AudioVolumeIndicator' [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/Top_Student.v:80]
 INFO: [Synth 8-6157] synthesizing module 'FrequencyIndicator' [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/FrequencyIndicator.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'FrequencyIndicator' (9#1) [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/FrequencyIndicator.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (10#1) [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6157] synthesizing module 'seg_display' [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/freq_display.v:23]
+WARNING: [Synth 8-567] referenced signal 'display' should be on the sensitivity list [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/freq_display.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'seg_display' (10#1) [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/freq_display.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'an' does not match port width (4) of module 'seg_display' [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/Top_Student.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (11#1) [C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 411.625 ; gain = 154.664
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 410.902 ; gain = 154.699
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -110,10 +114,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 411.625 ; gain = 154.664
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 410.902 ; gain = 154.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 411.625 ; gain = 154.664
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 410.902 ; gain = 154.699
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -129,22 +133,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 757.980 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 757.414 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 757.980 ; gain = 501.020
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 757.414 ; gain = 501.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 757.980 ; gain = 501.020
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 757.414 ; gain = 501.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 757.980 ; gain = 501.020
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 757.414 ; gain = 501.211
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
@@ -199,7 +203,7 @@ INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 757.980 ; gain = 501.020
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 757.414 ; gain = 501.211
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -215,6 +219,7 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 2     
 	   2 Input     17 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	               40 Bit    Registers := 1     
 	               32 Bit    Registers := 3     
@@ -226,6 +231,7 @@ Detailed RTL Component Info :
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 8     
 +---Multipliers : 
 	                 4x32  Multipliers := 1     
@@ -243,14 +249,17 @@ Detailed RTL Component Info :
 	   2 Input     16 Bit        Muxes := 25    
 	   4 Input     15 Bit        Muxes := 1     
 	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
 	  32 Input      6 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
 	  32 Input      5 Bit        Muxes := 2     
 	   5 Input      5 Bit        Muxes := 1     
 	   6 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 9     
 	   5 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 1     
@@ -265,6 +274,8 @@ Module Top_Student
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
 Module CLOCK_flexible 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -353,6 +364,15 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
+Module seg_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -375,15 +395,15 @@ INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32
 INFO: [Synth 8-5545] ROM "peak_track" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "timer0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[0]' (FD) to 'unitAV/an_reg[0]'
+INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[0]' (FD) to 'A/oled_data_A_reg[1]'
 INFO: [Synth 8-3886] merging instance 'unitAV/oled_data_reg[1]' (FDRE) to 'unitAV/oled_data_reg[3]'
 INFO: [Synth 8-3886] merging instance 'B/oled_data_B_reg[1]' (FDE) to 'B/oled_data_B_reg[8]'
-INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[1]' (FD) to 'unitAV/an_reg[0]'
+INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[1]' (FD) to 'A/oled_data_A_reg[2]'
 INFO: [Synth 8-3886] merging instance 'B/oled_data_B_reg[2]' (FDE) to 'B/oled_data_B_reg[5]'
-INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[2]' (FD) to 'unitAV/an_reg[0]'
+INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[2]' (FD) to 'A/oled_data_A_reg[3]'
 INFO: [Synth 8-3886] merging instance 'B/oled_data_B_reg[3]' (FDE) to 'B/oled_data_B_reg[8]'
-INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[3]' (FD) to 'unitAV/an_reg[0]'
-INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[4]' (FD) to 'unitAV/an_reg[0]'
+INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[3]' (FD) to 'A/oled_data_A_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (A/\oled_data_A_reg[4] )
 INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[5]' (FD) to 'A/oled_data_A_reg[6]'
 INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[6]' (FD) to 'A/oled_data_A_reg[7]'
 INFO: [Synth 8-3886] merging instance 'unitAV/oled_data_reg[7]' (FDRE) to 'unitAV/oled_data_reg[9]'
@@ -394,21 +414,22 @@ INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[11]' (FD) to 'A/oled_da
 INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[12]' (FD) to 'A/oled_data_A_reg[13]'
 INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[13]' (FD) to 'A/oled_data_A_reg[14]'
 INFO: [Synth 8-3886] merging instance 'A/oled_data_A_reg[14]' (FD) to 'A/oled_data_A_reg[15]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line84/multiply_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line86/\multiply_reg[0] )
 INFO: [Synth 8-3886] merging instance 'unitAV/seg_reg[0]' (FDE) to 'unitAV/seg_reg[3]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\unitAV/seg_reg[7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\unitAV/an_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (unitAV/\seg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (unitAV/\an_reg[0] )
 INFO: [Synth 8-3886] merging instance 'unitAV/an_reg[1]' (FD) to 'unitAV/an_reg[3]'
 INFO: [Synth 8-3886] merging instance 'unitAV/an_reg[2]' (FD) to 'unitAV/an_reg[3]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\unitAV/an_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\nolabel_line84/frequency_reg[0] )
-WARNING: [Synth 8-3332] Sequential element (unitAV/an_reg[3]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (unitAV/seg_reg[7]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line84/multiply_reg[0]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line84/frequency_reg[0]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (unitAV/an_reg[0]) is unused and will be removed from module Top_Student.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (unitAV/\an_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (nolabel_line86/\frequency_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (oled_data_A_reg[4]) is unused and will be removed from module oled_taskA.
+WARNING: [Synth 8-3332] Sequential element (an_reg[3]) is unused and will be removed from module AudioVolumeIndicator.
+WARNING: [Synth 8-3332] Sequential element (an_reg[0]) is unused and will be removed from module AudioVolumeIndicator.
+WARNING: [Synth 8-3332] Sequential element (seg_reg[7]) is unused and will be removed from module AudioVolumeIndicator.
+WARNING: [Synth 8-3332] Sequential element (multiply_reg[0]) is unused and will be removed from module FrequencyIndicator.
+WARNING: [Synth 8-3332] Sequential element (frequency_reg[0]) is unused and will be removed from module FrequencyIndicator.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:06 . Memory (MB): peak = 757.980 ; gain = 501.020
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 757.414 ; gain = 501.211
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -420,13 +441,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:26 ; elapsed = 00:01:35 . Memory (MB): peak = 757.980 ; gain = 501.020
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 757.414 ; gain = 501.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:36 . Memory (MB): peak = 770.141 ; gain = 513.180
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 757.414 ; gain = 501.211
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -438,7 +459,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:29 ; elapsed = 00:01:38 . Memory (MB): peak = 792.719 ; gain = 535.758
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 814.016 ; gain = 557.812
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -462,7 +483,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:42 . Memory (MB): peak = 792.719 ; gain = 535.758
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 814.016 ; gain = 557.812
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -475,7 +496,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:42 . Memory (MB): peak = 792.719 ; gain = 535.758
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 814.016 ; gain = 557.812
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -487,25 +508,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:42 . Memory (MB): peak = 792.719 ; gain = 535.758
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 814.016 ; gain = 557.812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:33 ; elapsed = 00:01:42 . Memory (MB): peak = 792.719 ; gain = 535.758
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 814.016 ; gain = 557.812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:42 . Memory (MB): peak = 792.719 ; gain = 535.758
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 814.016 ; gain = 557.812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:42 . Memory (MB): peak = 792.719 ; gain = 535.758
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 814.016 ; gain = 557.812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -522,46 +543,45 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     5|
-|2     |CARRY4 |   104|
-|3     |LUT1   |    29|
-|4     |LUT2   |   131|
-|5     |LUT3   |    91|
-|6     |LUT4   |   106|
-|7     |LUT5   |   117|
-|8     |LUT6   |   205|
-|9     |MUXF7  |     1|
-|10    |FDE_1  |    32|
-|11    |FDRE   |   457|
-|12    |FDSE   |    10|
-|13    |IBUF   |     7|
-|14    |OBUF   |    32|
+|2     |CARRY4 |   124|
+|3     |LUT1   |    21|
+|4     |LUT2   |   188|
+|5     |LUT3   |   135|
+|6     |LUT4   |   113|
+|7     |LUT5   |    98|
+|8     |LUT6   |   314|
+|9     |FDE_1  |    32|
+|10    |FDRE   |   459|
+|11    |FDSE   |    10|
+|12    |IBUF   |     8|
+|13    |OBUF   |    32|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+-----------------+---------------------+------+
 |      |Instance         |Module               |Cells |
 +------+-----------------+---------------------+------+
-|1     |top              |                     |  1327|
-|2     |  A              |oled_taskA           |    16|
-|3     |  B              |oled_taskB           |    22|
-|4     |  nolabel_line49 |Oled_Display         |   414|
-|5     |  nolabel_line84 |FrequencyIndicator   |   203|
-|6     |  unitA          |OLED_button          |    60|
-|7     |  unitAV         |AudioVolumeIndicator |   152|
-|8     |  unitB          |OLED_button_0        |    60|
-|9     |  unit_20khz     |CLOCK_flexible       |    52|
-|10    |  unit_6p25m     |CLOCK_flexible_1     |    52|
-|11    |  unit_audio     |Audio_Capture        |    79|
-|12    |  unitc          |coordinates          |   172|
+|1     |top              |                     |  1539|
+|2     |  B              |oled_taskB           |    21|
+|3     |  A              |oled_taskA           |    34|
+|4     |  nolabel_line49 |Oled_Display         |   517|
+|5     |  nolabel_line86 |FrequencyIndicator   |   408|
+|6     |  nolabel_line90 |seg_display          |    13|
+|7     |  unitA          |OLED_button          |    60|
+|8     |  unitAV         |AudioVolumeIndicator |   192|
+|9     |  unitB          |OLED_button_0        |    60|
+|10    |  unit_20khz     |CLOCK_flexible       |    50|
+|11    |  unit_6p25m     |CLOCK_flexible_1     |    51|
+|12    |  unit_audio     |Audio_Capture        |    65|
 +------+-----------------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:42 . Memory (MB): peak = 792.719 ; gain = 535.758
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 814.016 ; gain = 557.812
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:18 . Memory (MB): peak = 792.719 ; gain = 189.402
-Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:43 . Memory (MB): peak = 792.719 ; gain = 535.758
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 814.016 ; gain = 211.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 814.016 ; gain = 557.812
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 144 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 164 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -570,11 +590,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDE_1 => FDRE (inverted pins: C): 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-83 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+85 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:49 . Memory (MB): peak = 792.719 ; gain = 548.465
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 814.016 ; gain = 570.457
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 792.719 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 20 04:22:59 2022...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 814.016 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 20 16:33:01 2022...

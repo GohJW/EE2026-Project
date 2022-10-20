@@ -18,7 +18,7 @@
 module Top_Student (
     input baysis_clock,
     input  btnU, btnD,
-    input sw0, sw1, sw2,
+    input sw0, sw1, sw2, sw3,
     output [8:0] led,
     output [3:0] an,
     output [7:0] seg,
@@ -69,11 +69,13 @@ module Top_Student (
     oled_taskB B(delay_B, wire_clk6p25m, oled_data_B, x, y);
      
     wire [4:0]an_volume;
+    wire [4:0] an_freq;
     wire [7:0]seg_volume;
+    wire [7:0]seg_freq;
     wire [4:0]led_volume;
     assign led[4:0] = led_volume;
-    assign seg = seg_volume;
-    assign an = an_volume;
+    assign seg = (sw3 == 1) ? seg_freq : seg_volume;
+    assign an = (sw3 == 1) ? an_freq : an_volume;
      
     AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, wire_clk6p25m, an_volume, seg_volume, led_volume, oled_data_volume, x, y);
     //    assign oled_data = (sw0 == 1) ? oled_data_B : oled_data_A;
@@ -85,5 +87,6 @@ module Top_Student (
     assign led[6] = (freq > 200) ? 1:0;
     assign led[7] = (freq > 300) ? 1:0;
     assign led[8] = (freq > 400) ? 1:0;
+    seg_display(wire_clk20k, freq[13:0], an_freq, seg_freq);
   
 endmodule

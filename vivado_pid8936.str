@@ -1,0 +1,1012 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 8936
+License: Customer
+
+Current time: 	Thu Oct 20 15:06:44 SGT 2022
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 39 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Shayer Ahmed
+User home directory: C:/Users/Shayer Ahmed
+User working directory: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Shayer Ahmed/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Shayer Ahmed/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Shayer Ahmed/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/vivado.log
+Vivado journal file location: 	C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/vivado.jou
+Engine tmp dir: 	C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/.Xil/Vivado-8936-shay
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	145 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 529 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 81 MB (+81970kb) [00:00:14]
+// [Engine Memory]: 500 MB (+372361kb) [00:00:14]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Shayer Ahmed\Documents\GitHub\EE2026-Project\SoundDisplay.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 530 MB (+5767kb) [00:00:17]
+// Tcl Message: open_project {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 539 MB. GUI used memory: 41 MB. Current time: 10/20/22 3:06:47 PM SGT
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 576 MB (+20384kb) [00:00:23]
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 778.207 ; gain = 97.641 
+// [Engine Memory]: 621 MB (+16974kb) [00:00:27]
+// Project name: SoundDisplay; location: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (D, ck)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)
+// PAPropertyPanels.initPanels (Top_Student.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true, false, false, false, true, false); // B (D, ck) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+// Elapsed time: 140 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), FrequencyIndicator : FrequencyIndicator (FrequencyIndicator.v)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), FrequencyIndicator : FrequencyIndicator (FrequencyIndicator.v)]", 12, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("FrequencyIndicator.v", 427, 507); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 295, 407); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 330, 512); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 332, 492); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 465, 480); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 452, 465); // ce (w, ck)
+// [GUI Memory]: 85 MB (+647kb) [00:03:36]
+// Elapsed time: 159 seconds
+selectCodeEditor("Top_Student.v", 330, 527); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 314, 513); // ce (w, ck)
+// [GUI Memory]: 92 MB (+2324kb) [00:06:34]
+// Elapsed time: 44 seconds
+selectCodeEditor("Top_Student.v", 160, 535); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 157, 535, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 465, 539); // ce (w, ck)
+// Elapsed time: 36 seconds
+selectCodeEditor("Top_Student.v", 164, 400); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 807, 406); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyIndicator.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 125, 215); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 125, 215, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 504, 331); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 390, 296); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 282, 256); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 93, 256); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 100, 262); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 117, 265); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("Top_Student.v", 112, 285); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("Top_Student.v", 207, 231); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 194, 209); // ce (w, ck)
+// [GUI Memory]: 97 MB (+829kb) [00:08:38]
+// Elapsed time: 29 seconds
+selectCodeEditor("Top_Student.v", 484, 293); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 196, 353); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 383, 313); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 407, 458); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 207, 490); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 325, 492); // ce (w, ck)
+// Elapsed time: 38 seconds
+selectCodeEditor("Top_Student.v", 31, 487); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("Top_Student.v", 134, 539); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 48, 562); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 414, 270); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 397, 303); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 245, 285); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 372, 464); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 366, 516); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 639 MB. GUI used memory: 47 MB. Current time: 10/20/22 3:17:07 PM SGT
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 12 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "freq_display"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 24 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/freq_display.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.srcs/sources_1/new/freq_display.v}} 
+// I (ck): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, freq_display (freq_display.v)]", 13, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, freq_display (freq_display.v)]", 13, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("freq_display.v", 235, 403); // ce (w, ck)
+selectCodeEditor("freq_display.v", 209, 382); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyIndicator.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyIndicator.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), unitAV : AudioVolumeIndicator (AudioVolumeIndicator.v)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), unitAV : AudioVolumeIndicator (AudioVolumeIndicator.v)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("AudioVolumeIndicator.v", 176, 162); // ce (w, ck)
+typeControlKey((HResource) null, "AudioVolumeIndicator.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+typeControlKey((HResource) null, "freq_display.v", 'v'); // ce (w, ck)
+selectCodeEditor("freq_display.v", 51, 433); // ce (w, ck)
+selectCodeEditor("freq_display.v", 238, 487); // ce (w, ck)
+selectCodeEditor("freq_display.v", 175, 421); // ce (w, ck)
+selectCodeEditor("freq_display.v", 168, 422); // ce (w, ck)
+typeControlKey((HResource) null, "freq_display.v", 'v'); // ce (w, ck)
+selectCodeEditor("freq_display.v", 185, 501); // ce (w, ck)
+selectCodeEditor("freq_display.v", 202, 475); // ce (w, ck)
+selectCodeEditor("freq_display.v", 215, 502); // ce (w, ck)
+selectCodeEditor("freq_display.v", 205, 492); // ce (w, ck)
+selectCodeEditor("freq_display.v", 148, 503); // ce (w, ck)
+selectCodeEditor("freq_display.v", 214, 511); // ce (w, ck)
+selectCodeEditor("freq_display.v", 200, 499); // ce (w, ck)
+// Elapsed time: 109 seconds
+selectCodeEditor("freq_display.v", 116, 473); // ce (w, ck)
+// Elapsed time: 917 seconds
+selectCodeEditor("freq_display.v", 75, 297); // ce (w, ck)
+selectCodeEditor("freq_display.v", 89, 305); // ce (w, ck)
+selectCodeEditor("freq_display.v", 180, 350); // ce (w, ck)
+selectCodeEditor("freq_display.v", 242, 434); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, seg_display (freq_display.v)]", 14, false); // B (D, ck)
+selectCodeEditor("freq_display.v", 106, 283); // ce (w, ck)
+selectCodeEditor("freq_display.v", 313, 386); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("freq_display.v", 102, 267); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 171, 139); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AudioVolumeIndicator.v", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+selectCodeEditor("freq_display.v", 67, 269); // ce (w, ck)
+selectCodeEditor("freq_display.v", 70, 259); // ce (w, ck)
+selectCodeEditor("freq_display.v", 78, 266); // ce (w, ck)
+typeControlKey((HResource) null, "freq_display.v", 'v'); // ce (w, ck)
+// Elapsed time: 63 seconds
+selectCodeEditor("freq_display.v", 167, 335); // ce (w, ck)
+selectCodeEditor("freq_display.v", 260, 323); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectCodeEditor("freq_display.v", 205, 279); // ce (w, ck)
+selectCodeEditor("freq_display.v", 250, 359); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("freq_display.v", 186, 328); // ce (w, ck)
+selectCodeEditor("freq_display.v", 71, 486); // ce (w, ck)
+selectCodeEditor("freq_display.v", 139, 351); // ce (w, ck)
+// [GUI Memory]: 103 MB (+1471kb) [00:32:47]
+// Elapsed time: 314 seconds
+selectCodeEditor("freq_display.v", 84, 395); // ce (w, ck)
+// Elapsed time: 28 seconds
+selectCodeEditor("freq_display.v", 122, 301); // ce (w, ck)
+// Elapsed time: 62 seconds
+selectCodeEditor("freq_display.v", 223, 439); // ce (w, ck)
+selectCodeEditor("freq_display.v", 237, 416); // ce (w, ck)
+selectCodeEditor("freq_display.v", 223, 311); // ce (w, ck)
+selectCodeEditor("freq_display.v", 112, 288); // ce (w, ck)
+selectCodeEditor("freq_display.v", 107, 297); // ce (w, ck)
+selectCodeEditor("freq_display.v", 111, 402); // ce (w, ck)
+selectCodeEditor("freq_display.v", 111, 300); // ce (w, ck)
+selectCodeEditor("freq_display.v", 124, 396); // ce (w, ck)
+selectCodeEditor("freq_display.v", 142, 414); // ce (w, ck)
+// Elapsed time: 40 seconds
+selectCodeEditor("freq_display.v", 176, 437); // ce (w, ck)
+selectCodeEditor("freq_display.v", 258, 453); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("freq_display.v", 241, 435); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 650 MB. GUI used memory: 50 MB. Current time: 10/20/22 3:47:07 PM SGT
+// Elapsed time: 34 seconds
+selectCodeEditor("freq_display.v", 90, 435); // ce (w, ck)
+// Elapsed time: 54 seconds
+selectCodeEditor("freq_display.v", 364, 485); // ce (w, ck)
+selectCodeEditor("freq_display.v", 320, 500); // ce (w, ck)
+// Elapsed time: 47 seconds
+selectCodeEditor("freq_display.v", 328, 392); // ce (w, ck)
+selectCodeEditor("freq_display.v", 328, 487); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("freq_display.v", 388, 344); // ce (w, ck)
+// Elapsed time: 56 seconds
+selectCodeEditor("freq_display.v", 167, 367); // ce (w, ck)
+selectCodeEditor("freq_display.v", 406, 295); // ce (w, ck)
+selectCodeEditor("freq_display.v", 287, 370); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("freq_display.v", 376, 298); // ce (w, ck)
+selectCodeEditor("freq_display.v", 294, 363); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("freq_display.v", 269, 148); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("freq_display.v", 297, 366); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("freq_display.v", 132, 352); // ce (w, ck)
+selectCodeEditor("freq_display.v", 170, 365); // ce (w, ck)
+selectCodeEditor("freq_display.v", 308, 412); // ce (w, ck)
+// Elapsed time: 119 seconds
+selectCodeEditor("freq_display.v", 137, 233); // ce (w, ck)
+selectCodeEditor("freq_display.v", 415, 343); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 80 seconds
+selectCodeEditor("freq_display.v", 275, 371); // ce (w, ck)
+selectCodeEditor("freq_display.v", 276, 362); // ce (w, ck)
+selectCodeEditor("freq_display.v", 319, 485); // ce (w, ck)
+selectCodeEditor("freq_display.v", 326, 479); // ce (w, ck)
+selectCodeEditor("freq_display.v", 329, 471); // ce (w, ck)
+typeControlKey((HResource) null, "freq_display.v", 'v'); // ce (w, ck)
+selectCodeEditor("freq_display.v", 330, 340); // ce (w, ck)
+selectCodeEditor("freq_display.v", 169, 485); // ce (w, ck)
+selectCodeEditor("freq_display.v", 165, 142); // ce (w, ck)
+selectCodeEditor("freq_display.v", 255, 209); // ce (w, ck)
+selectCodeEditor("freq_display.v", 178, 487); // ce (w, ck)
+selectCodeEditor("freq_display.v", 191, 151); // ce (w, ck)
+selectCodeEditor("freq_display.v", 197, 147); // ce (w, ck)
+selectCodeEditor("freq_display.v", 456, 356); // ce (w, ck)
+selectCodeEditor("freq_display.v", 282, 494); // ce (w, ck)
+selectCodeEditor("freq_display.v", 164, 483); // ce (w, ck)
+selectCodeEditor("freq_display.v", 345, 456); // ce (w, ck)
+selectCodeEditor("freq_display.v", 263, 483, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("freq_display.v", 232, 483); // ce (w, ck)
+selectButton(PAResourceEtoH.FileSetPanel_MESSAGES, "2"); // h (f, ck)
+// Elapsed time: 68 seconds
+selectCodeEditor("freq_display.v", 111, 484); // ce (w, ck)
+selectCodeEditor("freq_display.v", 306, 513); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("freq_display.v", 171, 484); // ce (w, ck)
+selectCodeEditor("freq_display.v", 177, 490); // ce (w, ck)
+selectCodeEditor("freq_display.v", 183, 491); // ce (w, ck)
+// Elapsed time: 56 seconds
+selectCodeEditor("freq_display.v", 157, 333); // ce (w, ck)
+selectCodeEditor("freq_display.v", 142, 350); // ce (w, ck)
+selectCodeEditor("freq_display.v", 145, 369); // ce (w, ck)
+selectCodeEditor("freq_display.v", 79, 369); // ce (w, ck)
+selectCodeEditor("freq_display.v", 78, 367); // ce (w, ck)
+selectCodeEditor("freq_display.v", 81, 367, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 134, 328); // ce (w, ck)
+selectCodeEditor("freq_display.v", 206, 454); // ce (w, ck)
+selectCodeEditor("freq_display.v", 326, 483); // ce (w, ck)
+selectCodeEditor("freq_display.v", 354, 423); // ce (w, ck)
+selectCodeEditor("freq_display.v", 406, 371); // ce (w, ck)
+selectCodeEditor("freq_display.v", 211, 478); // ce (w, ck)
+selectCodeEditor("freq_display.v", 126, 367); // ce (w, ck)
+selectCodeEditor("freq_display.v", 154, 378); // ce (w, ck)
+selectCodeEditor("freq_display.v", 225, 392); // ce (w, ck)
+selectCodeEditor("freq_display.v", 325, 348); // ce (w, ck)
+// Elapsed time: 96 seconds
+selectCodeEditor("freq_display.v", 292, 426); // ce (w, ck)
+selectCodeEditor("freq_display.v", 279, 414); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("freq_display.v", 295, 459); // ce (w, ck)
+selectCodeEditor("freq_display.v", 401, 490); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("freq_display.v", 314, 525); // ce (w, ck)
+selectCodeEditor("freq_display.v", 326, 538); // ce (w, ck)
+selectCodeEditor("freq_display.v", 253, 510); // ce (w, ck)
+selectCodeEditor("freq_display.v", 253, 490); // ce (w, ck)
+// Elapsed time: 117 seconds
+selectCodeEditor("freq_display.v", 271, 525); // ce (w, ck)
+selectCodeEditor("freq_display.v", 176, 524); // ce (w, ck)
+typeControlKey((HResource) null, "freq_display.v", 'v'); // ce (w, ck)
+selectCodeEditor("freq_display.v", 253, 478); // ce (w, ck)
+selectCodeEditor("freq_display.v", 366, 483); // ce (w, ck)
+selectCodeEditor("freq_display.v", 193, 399); // ce (w, ck)
+selectCodeEditor("freq_display.v", 165, 401); // ce (w, ck)
+selectCodeEditor("freq_display.v", 110, 385); // ce (w, ck)
+selectCodeEditor("freq_display.v", 109, 385, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 151, 405); // ce (w, ck)
+selectCodeEditor("freq_display.v", 151, 405, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 137, 416); // ce (w, ck)
+selectCodeEditor("freq_display.v", 137, 416, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 164, 415); // ce (w, ck)
+selectCodeEditor("freq_display.v", 164, 415, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 141, 437); // ce (w, ck)
+selectCodeEditor("freq_display.v", 141, 437, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 150, 457); // ce (w, ck)
+selectCodeEditor("freq_display.v", 150, 458, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 151, 470); // ce (w, ck)
+selectCodeEditor("freq_display.v", 151, 470, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 142, 488); // ce (w, ck)
+selectCodeEditor("freq_display.v", 142, 488, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 148, 501); // ce (w, ck)
+selectCodeEditor("freq_display.v", 148, 501, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 152, 519); // ce (w, ck)
+selectCodeEditor("freq_display.v", 152, 519, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 152, 519); // ce (w, ck)
+selectCodeEditor("freq_display.v", 152, 519); // ce (w, ck)
+selectCodeEditor("freq_display.v", 152, 519, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 152, 541); // ce (w, ck)
+selectCodeEditor("freq_display.v", 152, 541, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 152, 551); // ce (w, ck)
+selectCodeEditor("freq_display.v", 152, 551, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 324, 455); // ce (w, ck)
+selectCodeEditor("freq_display.v", 119, 388); // ce (w, ck)
+selectCodeEditor("freq_display.v", 2, 382); // ce (w, ck)
+selectCodeEditor("freq_display.v", 183, 384); // ce (w, ck)
+selectCodeEditor("freq_display.v", 181, 397); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("freq_display.v", 323, 463); // ce (w, ck)
+selectCodeEditor("freq_display.v", 425, 546); // ce (w, ck)
+selectCodeEditor("freq_display.v", 450, 490); // ce (w, ck)
+selectCodeEditor("freq_display.v", 349, 493); // ce (w, ck)
+selectCodeEditor("freq_display.v", 37, 483); // ce (w, ck)
+selectCodeEditor("freq_display.v", 159, 284); // ce (w, ck)
+selectCodeEditor("freq_display.v", 328, 487); // ce (w, ck)
+selectCodeEditor("freq_display.v", 372, 480); // ce (w, ck)
+selectCodeEditor("freq_display.v", 702, 476); // ce (w, ck)
+selectCodeEditor("freq_display.v", 565, 365); // ce (w, ck)
+selectCodeEditor("freq_display.v", 101, 302); // ce (w, ck)
+selectCodeEditor("freq_display.v", 515, 326); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 417, 469); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 359, 517); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+selectCodeEditor("freq_display.v", 181, 372); // ce (w, ck)
+typeControlKey((HResource) null, "freq_display.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 187, 482); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 129, 505); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 138, 506); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 138, 506, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 202, 509); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 67, 505); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 249, 481); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 349, 515); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 27, 501); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 166, 501); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyIndicator.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+selectCodeEditor("freq_display.v", 164, 320); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 43, 488); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 43, 488, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 49, 482); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 307, 189); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+selectCodeEditor("freq_display.v", 119, 319); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_Student.v", 436, 429); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 449, 485); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 16, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 16, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Basys3_Master.xdc", 438, 320); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 458, 410); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 304, 301); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 314, 292); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 362, 317); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 367, 318); // ce (w, ck)
+selectCodeEditor("Basys3_Master.xdc", 369, 318, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Basys3_Master.xdc", 370, 319); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyIndicator.v", 2); // k (j, ck)
+selectCodeEditor("FrequencyIndicator.v", 492, 432); // ce (w, ck)
+// Elapsed time: 46 seconds
+selectCodeEditor("FrequencyIndicator.v", 500, 433); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 326, 501); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 345, 521); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Thu Oct 20 16:08:21 2022] Launched synth_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/synth_1/runme.log [Thu Oct 20 16:08:21 2022] Launched impl_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 109 MB (+493kb) [01:02:49]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 153 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACB1CAA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,188 MB (+562409kb) [01:04:48]
+dismissDialog("Auto Connect"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,190 MB. GUI used memory: 53 MB. Current time: 10/20/22 4:11:18 PM SGT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 52 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 2); // k (j, ck)
+// Elapsed time: 42 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bx (ck):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 5); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("freq_display.v", 212, 297); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyIndicator.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AudioVolumeIndicator.v", 4); // k (j, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 232, 268); // ce (w, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 234, 410); // ce (w, ck)
+typeControlKey((HResource) null, "AudioVolumeIndicator.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+selectCodeEditor("freq_display.v", 145, 316); // ce (w, ck)
+typeControlKey((HResource) null, "freq_display.v", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("freq_display.v", 226, 315); // ce (w, ck)
+selectCodeEditor("freq_display.v", 181, 317); // ce (w, ck)
+selectCodeEditor("freq_display.v", 492, 343); // ce (w, ck)
+selectCodeEditor("freq_display.v", 500, 305); // ce (w, ck)
+selectCodeEditor("freq_display.v", 284, 317); // ce (w, ck)
+selectCodeEditor("freq_display.v", 485, 259); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyIndicator.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AudioVolumeIndicator.v", 4); // k (j, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 209, 197); // ce (w, ck)
+typeControlKey((HResource) null, "AudioVolumeIndicator.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+selectCodeEditor("freq_display.v", 264, 318); // ce (w, ck)
+typeControlKey((HResource) null, "freq_display.v", 'v'); // ce (w, ck)
+selectCodeEditor("freq_display.v", 183, 310); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AudioVolumeIndicator.v", 4); // k (j, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 335, 322); // ce (w, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 181, 193); // ce (w, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 198, 208); // ce (w, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 191, 201); // ce (w, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 191, 201, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("AudioVolumeIndicator.v", 339, 247); // ce (w, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 273, 241); // ce (w, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 208, 463); // ce (w, ck)
+typeControlKey((HResource) null, "AudioVolumeIndicator.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+selectCodeEditor("freq_display.v", 264, 335); // ce (w, ck)
+typeControlKey((HResource) null, "freq_display.v", 'v'); // ce (w, ck)
+selectCodeEditor("freq_display.v", 182, 332); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyIndicator.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AudioVolumeIndicator.v", 4); // k (j, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 206, 382); // ce (w, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 209, 385); // ce (w, ck)
+typeControlKey((HResource) null, "AudioVolumeIndicator.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+selectCodeEditor("freq_display.v", 265, 347); // ce (w, ck)
+typeControlKey((HResource) null, "freq_display.v", 'v'); // ce (w, ck)
+selectCodeEditor("freq_display.v", 181, 351); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyIndicator.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AudioVolumeIndicator.v", 4); // k (j, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 208, 400); // ce (w, ck)
+typeControlKey((HResource) null, "AudioVolumeIndicator.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+selectCodeEditor("freq_display.v", 267, 371); // ce (w, ck)
+typeControlKey((HResource) null, "freq_display.v", 'v'); // ce (w, ck)
+selectCodeEditor("freq_display.v", 180, 366); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyIndicator.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AudioVolumeIndicator.v", 4); // k (j, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 207, 472); // ce (w, ck)
+typeControlKey((HResource) null, "AudioVolumeIndicator.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 3); // k (j, ck)
+selectCodeEditor("freq_display.v", 266, 390); // ce (w, ck)
+typeControlKey((HResource) null, "freq_display.v", 'v'); // ce (w, ck)
+selectCodeEditor("freq_display.v", 175, 385); // ce (w, ck)
+selectCodeEditor("freq_display.v", 183, 391); // ce (w, ck)
+selectCodeEditor("freq_display.v", 183, 385); // ce (w, ck)
+selectCodeEditor("freq_display.v", 325, 424); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("freq_display.v", 244, 373); // ce (w, ck)
+selectCodeEditor("freq_display.v", 244, 373, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 245, 381); // ce (w, ck)
+selectCodeEditor("freq_display.v", 245, 381, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("freq_display.v", 247, 407); // ce (w, ck)
+selectCodeEditor("freq_display.v", 247, 407, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 44 seconds
+selectCodeEditor("freq_display.v", 239, 324); // ce (w, ck)
+selectCodeEditor("freq_display.v", 239, 324, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 67 seconds
+selectCodeEditor("freq_display.v", 499, 294); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 32 seconds
+selectCodeEditor("freq_display.v", 279, 195); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("freq_display.v", 315, 233); // ce (w, ck)
+selectCodeEditor("freq_display.v", 231, 224); // ce (w, ck)
+selectCodeEditor("freq_display.v", 238, 232); // ce (w, ck)
+selectCodeEditor("freq_display.v", 232, 253); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 25 seconds
+selectCodeEditor("freq_display.v", 252, 308); // ce (w, ck)
+selectCodeEditor("freq_display.v", 185, 300); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("freq_display.v", 172, 287); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Thu Oct 20 16:19:55 2022] Launched synth_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/synth_1/runme.log [Thu Oct 20 16:19:55 2022] Launched impl_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 152 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACB1CAA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 2); // k (j, ck)
+selectCodeEditor("freq_display.v", 469, 297); // ce (w, ck)
+// Elapsed time: 72 seconds
+selectCodeEditor("freq_display.v", 118, 246); // ce (w, ck)
+selectCodeEditor("freq_display.v", 197, 202); // ce (w, ck)
+selectCodeEditor("freq_display.v", 379, 325); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+selectCodeEditor("Top_Student.v", 193, 516); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 374, 318); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("Top_Student.v", 432, 348); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 399, 159); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 399, 159, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 160, 515); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 160, 515, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "freq_display.v", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+// Elapsed time: 12 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 14 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Thu Oct 20 16:26:06 2022] Launched synth_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/synth_1/runme.log [Thu Oct 20 16:26:06 2022] Launched impl_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 157 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// [GUI Memory]: 117 MB (+2269kb) [01:22:19]
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 40 seconds
+selectCodeEditor("freq_display.v", 418, 278); // ce (w, ck)
+selectCodeEditor("freq_display.v", 403, 295); // ce (w, ck)
+// Elapsed time: 62 seconds
+selectCodeEditor("freq_display.v", 404, 489); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("freq_display.v", 191, 115); // ce (w, ck)
+selectCodeEditor("freq_display.v", 196, 110); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("freq_display.v", 375, 162); // ce (w, ck)
+selectCodeEditor("freq_display.v", 322, 131); // ce (w, ck)
+selectCodeEditor("freq_display.v", 332, 162); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("freq_display.v", 323, 153); // ce (w, ck)
+selectCodeEditor("freq_display.v", 307, 140); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 51 seconds
+selectCodeEditor("freq_display.v", 393, 257); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("freq_display.v", 332, 156); // ce (w, ck)
+selectCodeEditor("freq_display.v", 119, 110); // ce (w, ck)
+selectCodeEditor("freq_display.v", 119, 110, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "freq_display.v", 'c'); // ce (w, ck)
+selectCodeEditor("freq_display.v", 271, 152); // ce (w, ck)
+selectCodeEditor("freq_display.v", 268, 165); // ce (w, ck)
+selectCodeEditor("freq_display.v", 268, 165, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "freq_display.v", 'v'); // ce (w, ck)
+selectCodeEditor("freq_display.v", 376, 161); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("freq_display.v", 383, 153); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("freq_display.v", 504, 293); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 123 MB (+445kb) [01:25:42]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Thu Oct 20 16:32:14 2022] Launched synth_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/synth_1/runme.log [Thu Oct 20 16:32:14 2022] Launched impl_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 149 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("freq_display.v", 506, 434); // ce (w, ck)
+// Elapsed time: 151 seconds
+selectCodeEditor("freq_display.v", 302, 302); // ce (w, ck)
+// Elapsed time: 46 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyIndicator.v", 1); // k (j, ck)
+selectCodeEditor("FrequencyIndicator.v", 446, 436); // ce (w, ck)
+selectCodeEditor("FrequencyIndicator.v", 452, 466); // ce (w, ck)
+// [GUI Memory]: 130 MB (+723kb) [01:32:48]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,193 MB. GUI used memory: 57 MB. Current time: 10/20/22 4:41:18 PM SGT
+// Elapsed time: 230 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AudioVolumeIndicator.v", 3); // k (j, ck)
+selectCodeEditor("AudioVolumeIndicator.v", 457, 334); // ce (w, ck)
