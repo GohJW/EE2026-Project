@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Thu Oct 20 16:34:17 2022
-| Host             : shay running 64-bit major release  (build 9200)
+| Date             : Thu Oct 20 18:45:00 2022
+| Host             : DESKTOP-D78LMBQ running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Student_power_routed.rpt -pb Top_Student_power_summary_routed.pb -rpx Top_Student_power_routed.rpx
 | Design           : Top_Student
 | Device           : xc7a35tcpg236-1
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.083        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.012        |
+| Dynamic (W)              | 0.011        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1521 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      713 |     20800 |            3.43 |
-|   CARRY4       |    <0.001 |      124 |      8150 |            1.52 |
-|   Register     |    <0.001 |      501 |     41600 |            1.20 |
+| Slice Logic    |    <0.001 |     2737 |       --- |             --- |
+|   LUT as Logic |    <0.001 |     1356 |     20800 |            6.52 |
+|   CARRY4       |    <0.001 |      285 |      8150 |            3.50 |
+|   Register     |    <0.001 |      784 |     41600 |            1.88 |
 |   Others       |     0.000 |       25 |       --- |             --- |
 |   BUFG         |     0.000 |        4 |        32 |           12.50 |
-| Signals        |    <0.001 |     1169 |       --- |             --- |
+| Signals        |     0.001 |     2304 |       --- |             --- |
 | I/O            |     0.008 |       40 |       106 |           37.74 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.083 |          |           |                 |
@@ -141,7 +141,7 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| Top_Student      |     0.012 |
+| Top_Student      |     0.011 |
 |   A              |    <0.001 |
 |   B              |    <0.001 |
 |   nolabel_line49 |    <0.001 |
