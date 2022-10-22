@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Thu Oct 20 18:45:00 2022
+| Date             : Sat Oct 22 17:09:06 2022
 | Host             : DESKTOP-D78LMBQ running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Student_power_routed.rpt -pb Top_Student_power_summary_routed.pb -rpx Top_Student_power_routed.rpx
 | Design           : Top_Student
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |     2737 |       --- |             --- |
-|   LUT as Logic |    <0.001 |     1356 |     20800 |            6.52 |
+| Slice Logic    |    <0.001 |     2756 |       --- |             --- |
+|   LUT as Logic |    <0.001 |     1370 |     20800 |            6.59 |
 |   CARRY4       |    <0.001 |      285 |      8150 |            3.50 |
-|   Register     |    <0.001 |      784 |     41600 |            1.88 |
-|   Others       |     0.000 |       25 |       --- |             --- |
+|   Register     |    <0.001 |      786 |     41600 |            1.89 |
+|   Others       |     0.000 |       27 |       --- |             --- |
 |   BUFG         |     0.000 |        4 |        32 |           12.50 |
-| Signals        |     0.001 |     2304 |       --- |             --- |
+| Signals        |    <0.001 |     2316 |       --- |             --- |
 | I/O            |     0.008 |       40 |       106 |           37.74 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.083 |          |           |                 |
@@ -145,11 +145,12 @@ Table of Contents
 |   A              |    <0.001 |
 |   B              |    <0.001 |
 |   nolabel_line49 |    <0.001 |
-|   nolabel_line86 |    <0.001 |
-|   nolabel_line90 |    <0.001 |
+|   nolabel_line83 |    <0.001 |
+|   nolabel_line87 |    <0.001 |
 |   unitA          |    <0.001 |
 |   unitAV         |    <0.001 |
 |   unitB          |    <0.001 |
+|   unitTunerD     |     0.000 |
 |   unit_20khz     |    <0.001 |
 |   unit_6p25m     |    <0.001 |
 |   unit_audio     |    <0.001 |

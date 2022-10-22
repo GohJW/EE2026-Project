@@ -77,16 +77,21 @@ module Top_Student (
     assign seg = (sw3 == 1) ? seg_freq : seg_volume;
     assign an = (sw3 == 1) ? an_freq : an_volume;
      
-    AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, wire_clk6p25m, an_volume, seg_volume, led_volume, oled_data_volume, x, y);
-    //    assign oled_data = (sw0 == 1) ? oled_data_B : oled_data_A;
-    assign oled_data = (sw2 == 1) ? oled_data_volume : (sw1 == 1) ? oled_data_B : (sw0 == 1) ? oled_data_A : 0;
-    //    assign oled_data = oled_data_volume;
-     
     wire [31:0] freq;
+    wire[15:0] oled_data_tuner;
+    
     FrequencyIndicator(MIC_in, wire_clk20k,led[5],freq);
     assign led[6] = (freq > 200) ? 1:0;
     assign led[7] = (freq > 300) ? 1:0;
     assign led[8] = (freq > 400) ? 1:0;
     seg_display(wire_clk20k, freq[13:0], an_freq, seg_freq);
+    TunerDisplay unitTunerD(freq, wire_clk6p25m, oled_data_tuner);
+        
+    AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, wire_clk6p25m, an_volume, seg_volume, led_volume, oled_data_volume, x, y);
+    
+    //    assign oled_data = (sw0 == 1) ? oled_data_B : oled_data_A;
+    assign oled_data = (sw3 == 1) ? oled_data_tuner : (sw2 == 1) ? oled_data_volume : (sw1 == 1) ? oled_data_B : (sw0 == 1) ? oled_data_A : 0;
+    //    assign oled_data = oled_data_volume;
+     
   
 endmodule
