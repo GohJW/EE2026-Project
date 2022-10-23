@@ -28,10 +28,10 @@ module AudioVolumeIndicator(
     output reg [7:0] seg,
     output reg [4:0] led,
     output reg [15:0] oled_data,
+    output reg [11:0] peak = 0,
     input [6:0] x,
     input [5:0] y
     );
-    reg [11:0] peak = 0;
     reg [11:0] peak_track = 0;
     reg [31:0]count = 0;
     always @ (posedge clock_20k) begin

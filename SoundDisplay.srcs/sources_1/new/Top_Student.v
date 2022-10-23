@@ -18,7 +18,7 @@
 module Top_Student (
     input baysis_clock,
     input  btnU, btnD,
-    input sw0, sw1, sw2, sw3,
+    input sw0, sw1, sw2, sw3, sw4,
     output [8:0] led,
     output [3:0] an,
     output [7:0] seg,
@@ -79,6 +79,7 @@ module Top_Student (
      
     wire [31:0] freq;
     wire[15:0] oled_data_tuner;
+    wire [11:0] peak;
     
     FrequencyIndicator(MIC_in, wire_clk20k,led[5],freq);
     assign led[6] = (freq > 200) ? 1:0;
@@ -87,7 +88,7 @@ module Top_Student (
     seg_display(wire_clk20k, freq[13:0], an_freq, seg_freq);
     TunerDisplay unitTunerD(freq, wire_clk6p25m, oled_data_tuner);
         
-    AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, wire_clk6p25m, an_volume, seg_volume, led_volume, oled_data_volume, x, y);
+    AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, wire_clk6p25m, an_volume, seg_volume, led_volume, oled_data_volume, peak, x, y);
     
     //    assign oled_data = (sw0 == 1) ? oled_data_B : oled_data_A;
     assign oled_data = (sw3 == 1) ? oled_data_tuner : (sw2 == 1) ? oled_data_volume : (sw1 == 1) ? oled_data_B : (sw0 == 1) ? oled_data_A : 0;
