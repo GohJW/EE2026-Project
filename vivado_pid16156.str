@@ -1,0 +1,955 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 16156
+License: Customer
+
+Current time: 	Mon Oct 24 02:38:31 SGT 2022
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 41 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Shayer Ahmed
+User home directory: C:/Users/Shayer Ahmed
+User working directory: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Shayer Ahmed/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Shayer Ahmed/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Shayer Ahmed/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/vivado.log
+Vivado journal file location: 	C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/vivado.jou
+Engine tmp dir: 	C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/.Xil/Vivado-16156-shay
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	147 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 489 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 78 MB (+79540kb) [00:00:16]
+// [Engine Memory]: 466 MB (+337037kb) [00:00:16]
+// Opening Vivado Project: C:\Users\Shayer Ahmed\Documents\GitHub\EE2026-Project\SoundDisplay.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 503 MB (+14464kb) [00:00:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 511 MB. GUI used memory: 34 MB. Current time: 10/24/22 2:38:33 AM SGT
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 544 MB (+16151kb) [00:00:24]
+// [Engine Memory]: 572 MB (+1023kb) [00:00:26]
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 767.719 ; gain = 73.898 
+// Project name: SoundDisplay; location: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)
+// PAPropertyPanels.initPanels (TunerDisplay.v) elapsed time: 0.5s
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), unitTunerD : TunerDisplay (TunerDisplay.v)]", 13, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), unitTunerD : TunerDisplay (TunerDisplay.v)]", 13, false, false, false, false, false, true); // B (D, ck) - Double Click
+floatView(PAResourceOtoP.PAViews_CODE, "TunerDisplay.v"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_CODE: Code: float view
+// Elapsed time: 26 seconds
+selectCodeEditor("TunerDisplay.v", 232, 530); // ce (w, aG)
+selectCodeEditor("TunerDisplay.v", 225, 495); // ce (w, aG)
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeFrame(PAResourceOtoP.PAViews_CODE, "TunerDisplay.v"); // aw (aE, aG)
+dockFrame(PAResourceOtoP.PAViews_CODE, "TunerDisplay.v"); // aw (aE, aG)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+// [GUI Memory]: 83 MB (+481kb) [00:04:03]
+// Elapsed time: 160 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 162 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Oct 24 02:42:33 2022] Launched synth_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/synth_1/runme.log [Mon Oct 24 02:42:33 2022] Launched impl_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 389ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 599 MB. GUI used memory: 45 MB. Current time: 10/24/22 2:43:38 AM SGT
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 1058 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 77 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 792.176 ; gain = 0.785 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACB1CAA 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,101 MB. GUI used memory: 60 MB. Current time: 10/24/22 3:01:44 AM SGT
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,102 MB (+525689kb) [00:23:31]
+// Elapsed time: 10 seconds
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// [GUI Memory]: 87 MB (+668kb) [00:25:01]
+// Elapsed time: 176 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bx (ck):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bx (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), unitTunerD : TunerDisplay (TunerDisplay.v)]", 13, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), unitTunerD : TunerDisplay (TunerDisplay.v)]", 13, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [GUI Memory]: 92 MB (+619kb) [00:31:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,170 MB. GUI used memory: 48 MB. Current time: 10/24/22 3:24:34 AM SGT
+// [Engine Memory]: 1,171 MB (+14384kb) [00:46:22]
+// Elapsed time: 1184 seconds
+selectCodeEditor("TunerDisplay.v", 779, 146); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("TunerDisplay.v", 188, 300); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("TunerDisplay.v", 317, 301); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("TunerDisplay.v", 184, 301); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("TunerDisplay.v", 288, 313); // ce (w, ck)
+// [GUI Memory]: 98 MB (+870kb) [01:10:53]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,171 MB. GUI used memory: 46 MB. Current time: 10/24/22 3:54:34 AM SGT
+// Elapsed time: 2972 seconds
+selectCodeEditor("TunerDisplay.v", 333, 265); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 186, 329); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 304, 327); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 361, 311); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 267, 314); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 256, 315); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 160, 316); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectCodeEditor("TunerDisplay.v", 402, 305); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 577, 360); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 156, 317); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 161, 316); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("TunerDisplay.v", 545, 289); // ce (w, ck)
+// Elapsed time: 47 seconds
+selectCodeEditor("TunerDisplay.v", 235, 334); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 235, 334); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("TunerDisplay.v", 280, 346); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 261, 324); // ce (w, ck)
+// Elapsed time: 116 seconds
+selectCodeEditor("TunerDisplay.v", 268, 352); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 265, 336); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 268, 350); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("TunerDisplay.v", 402, 365); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 665, 368); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("TunerDisplay.v", 654, 391); // ce (w, ck)
+// Elapsed time: 48 seconds
+selectCodeEditor("TunerDisplay.v", 155, 309); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 162, 314); // ce (w, ck)
+// Elapsed time: 47 seconds
+selectCodeEditor("TunerDisplay.v", 200, 222); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 183, 295); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 218, 233); // ce (w, ck)
+// [GUI Memory]: 103 MB (+523kb) [01:44:09]
+selectCodeEditor("TunerDisplay.v", 206, 308); // ce (w, ck)
+// Elapsed time: 120 seconds
+selectCodeEditor("TunerDisplay.v", 312, 329); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,171 MB. GUI used memory: 45 MB. Current time: 10/24/22 4:24:34 AM SGT
+// Elapsed time: 49 seconds
+selectCodeEditor("TunerDisplay.v", 518, 534); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("TunerDisplay.v", 161, 311); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 209, 309); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 229, 316); // ce (w, ck)
+// Elapsed time: 94 seconds
+selectCodeEditor("TunerDisplay.v", 304, 316); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 105, 318); // ce (w, ck)
+// Elapsed time: 134 seconds
+selectCodeEditor("TunerDisplay.v", 151, 311); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("TunerDisplay.v", 229, 311); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 400, 329); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 251, 316); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), B : oled_taskB (oled_taskB.v)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), B : oled_taskB (oled_taskB.v)]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TunerDisplay.v", 1); // k (j, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("TunerDisplay.v", 284, 306); // ce (w, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("TunerDisplay.v", 463, 317); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("TunerDisplay.v", 78, 279); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 115, 281); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 397, 264); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 418, 321); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 457, 374); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("TunerDisplay.v", 108, 300); // ce (w, ck)
+// Elapsed time: 35 seconds
+selectCodeEditor("TunerDisplay.v", 296, 298); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 302, 299); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 381, 296); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 398, 358); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 136, 335); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 515, 381); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 450, 333); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("TunerDisplay.v", 478, 374); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 487, 359); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 460, 372); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("TunerDisplay.v", 179, 370); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("TunerDisplay.v", 356, 369); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("TunerDisplay.v", 507, 368); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("TunerDisplay.v", 535, 371); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("TunerDisplay.v", 694, 362); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 786, 395); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 778, 388); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 791, 424); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("TunerDisplay.v", 494, 392); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 467, 378); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("TunerDisplay.v", 574, 463); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("TunerDisplay.v", 141, 421); // ce (w, ck)
+// Elapsed time: 47 seconds
+selectCodeEditor("TunerDisplay.v", 185, 413); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 181, 413, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("TunerDisplay.v", 184, 426); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 179, 419); // ce (w, ck)
+// Elapsed time: 44 seconds
+selectCodeEditor("TunerDisplay.v", 485, 419); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("TunerDisplay.v", 569, 415); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 593, 478); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 628, 419); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("TunerDisplay.v", 277, 413); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 144, 459); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 140, 450); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 151, 452); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 271, 450); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("TunerDisplay.v", 409, 443); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 496, 452); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 441, 465); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("TunerDisplay.v", 375, 469); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'c'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 8, 496); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 262, 484); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 140, 483); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 146, 489); // ce (w, ck)
+// Elapsed time: 45 seconds
+selectCodeEditor("TunerDisplay.v", 416, 487); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 618, 457); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 590, 527); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 528, 481); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 252, 382); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 368, 396); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 415, 512); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 431, 423); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 408, 448); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 180, 433); // ce (w, ck)
+// Elapsed time: 283 seconds
+selectCodeEditor("TunerDisplay.v", 440, 430); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("TunerDisplay.v", 339, 452); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 395, 402); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 391, 366); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 233, 393); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 371, 365); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'c'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "TunerDisplay.v", 'c'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 541, 457); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 323, 462); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 204, 459); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 347, 448); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 426, 449); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 434, 445); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 391, 452); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 104, 489); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 412, 439); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("TunerDisplay.v", 567, 425); // ce (w, ck)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 336, 455); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 386, 505); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 216, 447); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 135, 449); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 138, 452, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("TunerDisplay.v", 137, 463); // ce (w, ck)
+// Elapsed time: 46 seconds
+selectCodeEditor("TunerDisplay.v", 138, 460); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 141, 464, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("TunerDisplay.v", 141, 463); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("TunerDisplay.v", 331, 469); // ce (w, ck)
+// Elapsed time: 64 seconds
+selectCodeEditor("TunerDisplay.v", 110, 467); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 113, 504); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 483, 494); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("TunerDisplay.v", 127, 537); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 388, 488); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'c'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 109, 518); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 411, 515); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 419, 520); // ce (w, ck)
+// Elapsed time: 34 seconds
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("TunerDisplay.v", 196, 560); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 214, 547); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("TunerDisplay.v", 477, 415); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 477, 415, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("TunerDisplay.v", 221, 416); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 221, 416, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("TunerDisplay.v", 347, 417); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 347, 417, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("TunerDisplay.v", 215, 420); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 215, 420, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("TunerDisplay.v", 400, 481); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 388, 503); // ce (w, ck)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+// Elapsed time: 24 seconds
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 138, 456); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 158, 474); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 445, 492); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 462, 506); // ce (w, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("TunerDisplay.v", 185, 107); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 325, 109); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 503, 340); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 574, 116); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 408, 161); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 453, 386); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 451, 411); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 428, 388); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 437, 397); // ce (w, ck)
+// Elapsed time: 23 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 11 seconds
+selectCodeEditor("TunerDisplay.v", 394, 424); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,171 MB. GUI used memory: 46 MB. Current time: 10/24/22 4:54:35 AM SGT
+typeControlKey((HResource) null, "TunerDisplay.v", 'c'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 206, 455); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 406, 552); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 173, 301); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 141, 294); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 332, 401); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 116, 317); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 114, 316); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 278, 480); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 269, 452); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 139, 511); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("TunerDisplay.v", 333, 465); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 309, 443); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 394, 228); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 397, 235); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 374, 229); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'c'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 25, 448); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 369, 501); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 116, 343); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 108, 333); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 327, 396); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 167, 353); // ce (w, ck)
+// Elapsed time: 40 seconds
+selectCodeEditor("TunerDisplay.v", 164, 348); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 246, 347); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 368, 343); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 205, 379); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 277, 378); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 202, 415); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 283, 416); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 202, 450); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 281, 444); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 207, 496); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 202, 485); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 275, 490); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 623, 392); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 626, 491); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 118, 314); // ce (w, ck)
+// Elapsed time: 36 seconds
+selectCodeEditor("TunerDisplay.v", 659, 319); // ce (w, ck)
+// Elapsed time: 404 seconds
+selectCodeEditor("TunerDisplay.v", 188, 254); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+// Elapsed time: 12 seconds
+selectCheckBox(PAResourceItoN.LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (a, f): TRUE
+selectCheckBox(PAResourceItoN.LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (a, f): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 15 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Oct 24 05:04:45 2022] Launched synth_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/synth_1/runme.log [Mon Oct 24 05:04:45 2022] Launched impl_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 314ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 177 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACB1CAA 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+// Elapsed time: 11 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 214 seconds
+selectCodeEditor("TunerDisplay.v", 82, 355); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 80, 356); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 82, 353); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 82, 311); // ce (w, ck)
+// Elapsed time: 61 seconds
+selectCodeEditor("TunerDisplay.v", 384, 264); // ce (w, ck)
+// Elapsed time: 99 seconds
+selectCodeEditor("TunerDisplay.v", 262, 334); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 226, 251); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("TunerDisplay.v", 301, 213); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 376, 215); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 406, 385); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 147, 207); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 152, 209); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 143, 211); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 148, 215); // ce (w, ck)
+// Elapsed time: 141 seconds
+selectCodeEditor("TunerDisplay.v", 194, 330); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("TunerDisplay.v", 199, 362); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 278, 373); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("TunerDisplay.v", 346, 367); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("TunerDisplay.v", 329, 367); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 433, 359); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 432, 401); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 401, 366); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 162, 399); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("TunerDisplay.v", 353, 392); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 434, 393); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 410, 403); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 395, 402); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 437, 396); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 423, 428); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 426, 410); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 421, 419); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("TunerDisplay.v", 241, 398); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 239, 430); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("TunerDisplay.v", 369, 414); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'c'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 60, 450); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 472, 454); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 561, 459); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 199, 319); // ce (w, ck)
+// Elapsed time: 48 seconds
+selectCodeEditor("TunerDisplay.v", 180, 326); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 190, 209); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 429, 206); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("TunerDisplay.v", 261, 215); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("TunerDisplay.v", 333, 212); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 198, 249); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 239, 246); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 272, 243); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 351, 249); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("TunerDisplay.v", 438, 375); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 192, 277); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 224, 280); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("TunerDisplay.v", 426, 303); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectCodeEditor("TunerDisplay.v", 292, 315); // ce (w, ck)
+// [GUI Memory]: 112 MB (+3724kb) [02:45:40]
+// Elapsed time: 30 seconds
+selectCodeEditor("TunerDisplay.v", 525, 320); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("TunerDisplay.v", 383, 303); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'c'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 115, 326); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,171 MB. GUI used memory: 52 MB. Current time: 10/24/22 5:24:35 AM SGT
+// Elapsed time: 49 seconds
+selectCodeEditor("TunerDisplay.v", 310, 340); // ce (w, ck)
+// Elapsed time: 54 seconds
+selectCodeEditor("TunerDisplay.v", 453, 347); // ce (w, ck)
+// Elapsed time: 43 seconds
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 414, 365); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 124, 350); // ce (w, ck)
+// Elapsed time: 60 seconds
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 408, 401); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 575, 348); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 614, 382); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 627, 397); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 587, 492); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 639, 203); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 375, 404); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 556, 397); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("TunerDisplay.v", 750, 483); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 693, 437); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 653, 479); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("TunerDisplay.v", 671, 271); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 541, 306); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 389, 293); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'c'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 390, 458); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 382, 467); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 167, 332); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectCodeEditor("TunerDisplay.v", 456, 432); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 467, 446); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("TunerDisplay.v", 371, 553); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 319, 401); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 380, 541); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'c'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 372, 467); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 429, 454); // ce (w, ck)
+// Elapsed time: 15 seconds
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 563, 464); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("TunerDisplay.v", 450, 422); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 299, 332); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("TunerDisplay.v", 508, 524); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+selectCodeEditor("TunerDisplay.v", 205, 507); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 314, 499); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Mon Oct 24 05:31:31 2022] Launched synth_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/synth_1/runme.log [Mon Oct 24 05:31:31 2022] Launched impl_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 303ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 381 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("TunerDisplay.v", 241, 194); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 253, 189); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 270, 195); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 320, 200); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 278, 200); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 251, 200); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 141, 197); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 134, 197); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 244, 193); // ce (w, ck)
+typeControlKey((HResource) null, "TunerDisplay.v", 'v'); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 277, 203); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 392, 189); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 631, 257); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 108, 196); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 556, 276); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Mon Oct 24 05:39:35 2022] Launched synth_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/synth_1/runme.log [Mon Oct 24 05:39:35 2022] Launched impl_1... Run output will be captured here: C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 321ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 156 seconds
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Shayer Ahmed/Documents/GitHub/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("TunerDisplay.v", 773, 362); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("TunerDisplay.v", 288, 347); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 302, 352); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 186, 350); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("TunerDisplay.v", 231, 354); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 116, 193); // ce (w, ck)
+// Elapsed time: 47 seconds
+selectCodeEditor("TunerDisplay.v", 176, 409); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 201, 420); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 115, 190); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("TunerDisplay.v", 323, 509); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 323, 509, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("TunerDisplay.v", 243, 95); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 164, 97); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 169, 96); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("TunerDisplay.v", 192, 335); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 182, 304); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 140, 93); // ce (w, ck)
+selectCodeEditor("TunerDisplay.v", 177, 244); // ce (w, ck)
+// Elapsed time: 113 seconds
+selectCodeEditor("TunerDisplay.v", 449, 396); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("TunerDisplay.v", 393, 95); // ce (w, ck)
