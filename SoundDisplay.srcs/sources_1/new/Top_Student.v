@@ -85,7 +85,7 @@ module Top_Student (
     assign led[7] = (freq > 300) ? 1:0;
     assign led[8] = (freq > 400) ? 1:0;
     seg_display(wire_clk20k, freq[13:0], an_freq, seg_freq);
-    TunerDisplay unitTunerD(freq, wire_clk6p25m, oled_data_tuner);
+    TunerDisplay unitTunerD(freq, wire_clk6p25m, x, y, oled_data_tuner);
         
     AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, wire_clk6p25m, an_volume, seg_volume, led_volume, oled_data_volume, x, y);
     
