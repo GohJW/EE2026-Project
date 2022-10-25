@@ -83,7 +83,7 @@ module Top_Student (
     wire [15:0] oled_data_menu;
     assign seg = (menustate == 3'b101) ? seg_freq :(menustate == 3'b111) ?  seg_volume: 8'b11111111;
     assign an = (menustate == 3'b101) ? an_freq : (menustate == 3'b111) ?  an_volume: 4'b1111;
-   // assign led[4:0] = led_volume;
+    assign led[4:0] = (menustate == 3'b111) ? led_volume: 0;
 
      
    // wire[31:0] decibel;
@@ -100,7 +100,7 @@ module Top_Student (
     TunerDisplay unitTunerD(freq, wire_clk6p25m, oled_data_tuner);
         
     AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, wire_clk6p25m, an_volume, seg_volume, led_volume, oled_data_volume, peak, x, y);
-    assign led[4:0] = (menustate == 3'b111) ? led_volume: 0;
+    //assign led[4:0] = (menustate == 3'b111) ? led_volume: 0;
     //    assign oled_data = (sw0 == 1) ? oled_data_B : oled_data_A;
     //    assign oled_data = (sw3 == 1) ? oled_data_tuner : (sw2 == 1) ? oled_data_volume : (sw1 == 1) ? oled_data_B : (sw0 == 1) ? oled_data_A : 0;
     //    assign oled_data = oled_data_volume;
