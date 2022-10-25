@@ -28,23 +28,10 @@ module DecibelIndicator(
     );
     
     reg[31:0] count = 0;
-    reg[31:0] square = 0;
     always@(posedge wire_clk20k) begin
         count = (count == 2000) ? 0 : count+1;
         if(count == 2000) begin
-            square <= peak * peak;
-            decibel <= logbase2(square);
         end
     end
-    
-    function integer logbase2;
-    input [31:0] value;
-    integer i;
-    begin
-        logbase2 = 0;
-        for(i = 0; 2**i < value;i = i+1)
-            logbase2 = i+1;
-    end
-    endfunction
     
 endmodule

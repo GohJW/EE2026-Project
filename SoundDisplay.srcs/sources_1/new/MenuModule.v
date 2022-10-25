@@ -33,14 +33,14 @@ module MenuModule(
     reg [31:0] count = 0;
     always @ (posedge clk_6p25m) begin
         if(delay == 1) begin
-            count <= (count == 625000) ? 0: count+1;
-            delay <= (count == 625000) ? 0:1;
+            count <= (count == 3125000) ? 0: count+1;
+            delay <= (count == 3125000) ? 0:1;
         end
-        if((btnU == 1 ||btnD == 1 || btnL == 1 || btnR == 1 || btnC == 1) && delay == 0) begin
-            press = 1;
+        if((btnU == 1 ||btnD == 1 || btnL == 1 || btnR == 1 || btnC == 1) && delay == 0 && press == 0) begin
             delay <= 1;
+            press <= 1;
         end
-        if(btnU == 0 && btnD == 0 && btnL == 0 && btnR == 0 && btnC == 0 && delay == 0 && press == 1)
+        if(btnU == 0 && btnD == 0 && btnL == 0 && btnR == 0 && btnC == 0 && delay == 0)
             press <= 0;
         case(menustate)
             3'b000: begin // B
