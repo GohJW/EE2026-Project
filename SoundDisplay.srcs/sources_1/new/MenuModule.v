@@ -25,7 +25,7 @@ module MenuModule(
     input btnU, btnD, btnL, btnR, btnC,
     input [6:0] x,
     input [5:0] y,
-    output reg [2:0] menustate,
+    output reg [2:0] menustate = 3'b010,
     output reg [15:0] oled_data 
     );
     reg press = 0;

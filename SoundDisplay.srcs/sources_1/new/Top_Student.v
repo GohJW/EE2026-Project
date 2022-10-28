@@ -57,7 +57,7 @@ module Top_Student (
     wire [5:0] y;
     coordinates unitc(pixel_index, x, y);
     
-    wire [2:0]menustate = 3'b010;
+    wire [2:0]menustate;
     wire delay_A;
     wire delay_B;
     wire taskAbutton = (menustate == 3'b110) ? btnU:0;
@@ -98,8 +98,9 @@ module Top_Student (
    // assign display = (sw4 == 1) ? decibel[13:0]:freq[13:0];
     seg_display(wire_clk20k, freq[13:0], an_freq, seg_freq);
     TunerDisplay unitTunerD(freq, wire_clk6p25m, oled_data_tuner);
-        
-    AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, wire_clk6p25m, an_volume, seg_volume, led_volume, oled_data_volume, peak, x, y);
+    wire AVI_button;
+    assign AVI_button = (menustate == 3'b111) ? btnL:0;
+    AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, wire_clk6p25m, AVI_button, an_volume, seg_volume, led_volume, oled_data_volume, peak, x, y);
     //assign led[4:0] = (menustate == 3'b111) ? led_volume: 0;
     //    assign oled_data = (sw0 == 1) ? oled_data_B : oled_data_A;
     //    assign oled_data = (sw3 == 1) ? oled_data_tuner : (sw2 == 1) ? oled_data_volume : (sw1 == 1) ? oled_data_B : (sw0 == 1) ? oled_data_A : 0;
