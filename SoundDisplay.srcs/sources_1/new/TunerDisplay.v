@@ -31,16 +31,20 @@ module TunerDisplay(
     always@(posedge clock_6p25m) begin
         if(frequency >= 259 && frequency <= 263) begin // C4 in tune
             // pointer
-            if ( x == 47 && x == 48 && y >= 9 && y <= 24 ) begin
-                oled_data <= 16'b0000011111100000; end
-            // letter
+            if ( x == 48 && x == 49) begin
+                if (y >= 9 && y <= 24) begin
+                    oled_data <= 16'b0000011111100000; end
+                else if ((y == 36 && y == 37) || (y == 52 && y == 53)) begin
+                    oled_data <= 16'b1111111111111111; end end
             else if( x == 43 && y >= 39 && y <= 50 ) begin // start of C
                 oled_data <= 16'b1111111111111111; end
             else if( x == 44 && y >= 37 && y <= 52) begin
                 oled_data <= 16'b1111111111111111; end
             else if( x == 45 && y >= 35 && y <= 54) begin
                 oled_data <= 16'b1111111111111111; end
-            else if ( x >= 46 && x <= 52 && y == 36 && y == 37 && y == 52 && y == 53 ) begin
+            else if ( x >= 46 && x == 47 && ((y == 36 && y == 37) || (y == 52 && y == 53)) ) begin // conflict
+                oled_data <= 16'b1111111111111111; end
+            else if ( x >= 50 && x <= 52 &&((y == 36 && y == 37) || (y == 52 && y == 53))) begin // conflict
                 oled_data <= 16'b1111111111111111; end
             else if ( x == 53 && ((y >= 36 && y <= 39) || ( y >= 50 && y <= 53 ))) begin
                 oled_data <= 16'b1111111111111111; end
@@ -54,7 +58,7 @@ module TunerDisplay(
             else if ( x == 38 && x == 39 && y >= 47 && y <= 57 ) begin
                 oled_data <=16'b1111111111111111; end
             else if ( x == 40 && y == 53 && y == 54) begin
-                oled_data <=16'b1111111111111111; end   
+                oled_data <=16'b1111111111111111; end 
             else begin
                 oled_data<=16'b0000000000000000; end
         end
