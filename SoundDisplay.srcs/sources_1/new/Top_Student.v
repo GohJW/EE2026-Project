@@ -57,7 +57,7 @@ module Top_Student (
     wire [5:0] y;
     coordinates unitc(pixel_index, x, y);
     
-    wire [2:0]menustate;
+    wire [2:0]menustate = 3'b010;
     wire delay_A;
     wire delay_B;
     wire taskAbutton = (menustate == 3'b110) ? btnU:0;
@@ -93,7 +93,7 @@ module Top_Student (
     wire freq_led;
     FrequencyIndicator(MIC_in, wire_clk20k,freq_led,freq);
     assign led[5] = (menustate == 3'b101) ? freq_led:0;
-    assign led[6] = (freq > 200) ? 1:0;
+    assign led[6] = (menustate == 3'b101) ? (freq > 200) ? 1:0:0;
    // wire [13:0] display;
    // assign display = (sw4 == 1) ? decibel[13:0]:freq[13:0];
     seg_display(wire_clk20k, freq[13:0], an_freq, seg_freq);

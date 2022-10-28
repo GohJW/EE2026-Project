@@ -27,7 +27,9 @@ module OLED_button(
     output reg [1:0] state = 2'b00
     );
     reg [31:0] count = 0;
+    reg [31:0] count2 = 0;
     reg press = 0;
+    
     always @(posedge baysis_clock) begin
     if(button == 0 && delay == 0)
         press <= 0;
