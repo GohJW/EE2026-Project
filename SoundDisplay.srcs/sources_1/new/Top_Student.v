@@ -65,8 +65,8 @@ module Top_Student (
     OLED_button unitA(taskAbutton, baysis_clock, 299999999, delay_A);
     OLED_button unitB(taskBbutton, baysis_clock, 499999999, delay_B);
      
-    assign led14 = delay_A;
-    assign led12 = delay_B;
+    assign led14 = (menustate == 3'b110) ? delay_A:0;
+    assign led12 = (menustate == 3'b100) ? delay_B:0;
         
     oled_taskA A(delay_A, wire_clk6p25m, oled_data_A, x, y);
     oled_taskB B(delay_B, wire_clk6p25m, oled_data_B, x, y);
