@@ -2,10 +2,10 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Oct 29 15:41:30 2022
-# Process ID: 27896
+# Start of session at: Sun Oct 30 14:03:43 2022
+# Process ID: 25920
 # Current directory: C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20532 C:\Users\johnc\Documents\Sch Stuff\Year 2\Sem 1\EE2026\Gitrepo\EE2026-Project\SoundDisplay.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21720 C:\Users\johnc\Documents\Sch Stuff\Year 2\Sem 1\EE2026\Gitrepo\EE2026-Project\SoundDisplay.xpr
 # Log file: C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/vivado.log
 # Journal file: C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project\vivado.jou
 #-----------------------------------------------------------
@@ -16,13 +16,13 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 843.469 ; gain = 75.176
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 844.910 ; gain = 147.152
 update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
-[Sat Oct 29 16:29:23 2022] Launched synth_1...
+[Sun Oct 30 14:04:35 2022] Launched synth_1...
 Run output will be captured here: C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/SoundDisplay.runs/synth_1/runme.log
-[Sat Oct 29 16:29:23 2022] Launched impl_1...
+[Sun Oct 30 14:04:35 2022] Launched impl_1...
 Run output will be captured here: C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/SoundDisplay.runs/impl_1/runme.log
 open_hw
 connect_hw_server
@@ -37,7 +37,6 @@ INFO: [Labtools 27-2221] Launch Output:
 
 open_hw_target
 INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACA940A
-open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1546.984 ; gain = 610.789
 set_property PROGRAM.FILE {C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
@@ -59,20 +58,11 @@ Resolution:
 1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183ACA940A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183ACA940A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
-[Sat Oct 29 16:45:15 2022] Launched synth_1...
+[Sun Oct 30 14:11:47 2022] Launched synth_1...
 Run output will be captured here: C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/SoundDisplay.runs/synth_1/runme.log
-[Sat Oct 29 16:45:15 2022] Launched impl_1...
+[Sun Oct 30 14:11:47 2022] Launched impl_1...
 Run output will be captured here: C:/Users/johnc/Documents/Sch Stuff/Year 2/Sem 1/EE2026/Gitrepo/EE2026-Project/SoundDisplay.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
@@ -87,4 +77,4 @@ Resolution:
 2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
 For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
 exit
-INFO: [Common 17-206] Exiting Vivado at Sat Oct 29 17:10:49 2022...
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 30 14:24:34 2022...

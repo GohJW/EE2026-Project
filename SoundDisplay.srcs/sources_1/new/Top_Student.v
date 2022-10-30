@@ -97,7 +97,7 @@ module Top_Student (
    // wire [13:0] display;
    // assign display = (sw4 == 1) ? decibel[13:0]:freq[13:0];
     seg_display(wire_clk20k, freq[13:0], an_freq, seg_freq);
-    TunerDisplay unitTunerD(freq, wire_clk6p25m, oled_data_tuner);
+    TunerDisplay unitTunerD(freq, wire_clk6p25m, x, y, oled_data_tuner);
     wire AVI_button;
     assign AVI_button = (menustate == 3'b111) ? btnL:0;
     AudioVolumeIndicator unitAV(MIC_in, wire_clk20k, wire_clk6p25m, AVI_button, an_volume, seg_volume, led_volume, oled_data_volume, peak, x, y);
