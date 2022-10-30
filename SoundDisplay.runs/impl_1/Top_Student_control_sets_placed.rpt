@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sun Oct 30 14:14:03 2022
-| Host         : DESKTOP-D78LMBQ running 64-bit major release  (build 9200)
+| Date         : Sun Oct 30 15:14:01 2022
+| Host         : shay running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
 | Design       : Top_Student
 | Device       : xc7a35t
@@ -24,7 +24,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |    40 |
-| Unused register locations in slices containing registers |    62 |
+| Unused register locations in slices containing registers |    64 |
 +----------------------------------------------------------+-------+
 
 
@@ -50,12 +50,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             200 |           46 |
+| No           | No                    | No                     |             200 |           41 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             420 |           59 |
-| Yes          | No                    | No                     |             790 |          116 |
+| No           | Yes                   | No                     |             420 |           60 |
+| Yes          | No                    | No                     |             796 |          121 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             296 |           38 |
+| Yes          | Yes                   | No                     |             296 |           40 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -68,42 +68,42 @@ Table of Contents
 | ~wire_clk6p25m_BUFG          |                                      |                                          |                1 |              2 |
 |  delay                       |                                      |                                          |                1 |              6 |
 |  led12_OBUF_BUFG             |                                      |                                          |                1 |              6 |
-|  wire_clk6p25m_BUFG          | nolabel_line92/oled_data[15]_i_1_n_0 |                                          |                1 |              8 |
-|  wire_clk6p25m_BUFG          |                                      | unitAV/oled_data[6]_i_1_n_0              |                2 |              8 |
 |  led14_OBUF_BUFG             |                                      |                                          |                1 |              8 |
 |  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/count                 |                                          |                2 |              8 |
+|  wire_clk6p25m_BUFG          |                                      | unitAV/oled_data[6]_i_1_n_0              |                2 |              8 |
 |  wire_clk6p25m_BUFG          | nolabel_line49/oled_data_B_reg[10]   | nolabel_line49/oled_data_B_reg[10]_0     |                2 |              8 |
-|  wire_clk6p25m_BUFG          | nolabel_line49/oled_data_B_reg[10]   | nolabel_line49/oled_data_B_reg[9]_2      |                1 |             10 |
-|  wire_clk6p25m_BUFG          |                                      | nolabel_line49/oled_data_reg[9]_1        |                2 |             12 |
-|  baysis_clock_IBUF_BUFG      |                                      |                                          |                5 |             14 |
-| ~unit_audio/J_MIC3_Pin4_OBUF |                                      |                                          |                5 |             24 |
-|  baysis_clock_IBUF_BUFG      |                                      | J_MIC3_Pin1_OBUF_BUFG                    |                3 |             24 |
-|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/peak_track_reg[11]_i_1_n_5    | unitAV/count[31]_i_1__0_n_0              |                2 |             24 |
-|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line92/E[0]                  |                                          |                3 |             24 |
+|  wire_clk6p25m_BUFG          | nolabel_line92/oled_data[15]_i_1_n_0 |                                          |                1 |              8 |
+|  wire_clk6p25m_BUFG          | nolabel_line49/oled_data_B_reg[10]   | nolabel_line49/oled_data_B_reg[9]_2      |                2 |             10 |
+|  wire_clk6p25m_BUFG          |                                      | nolabel_line49/oled_data_reg[9]_1        |                3 |             12 |
+|  baysis_clock_IBUF_BUFG      |                                      |                                          |                4 |             14 |
+| ~unit_audio/J_MIC3_Pin4_OBUF |                                      |                                          |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG       | unitAV/peak_track_reg[11]_i_1_n_5    | unitAV/count[31]_i_1__0_n_0              |                3 |             24 |
 |  J_MIC3_Pin1_OBUF_BUFG       | unitAV/count[31]_i_1__0_n_0          |                                          |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line92/E[0]                  |                                          |                3 |             24 |
+|  baysis_clock_IBUF_BUFG      |                                      | J_MIC3_Pin1_OBUF_BUFG                    |                3 |             24 |
 | ~wire_clk6p25m_BUFG          |                                      | nolabel_line49/frame_counter[16]_i_1_n_0 |                5 |             34 |
 | ~wire_clk6p25m_BUFG          | nolabel_line49/delay[0]_i_1_n_0      |                                          |                5 |             40 |
-|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample2               |                                          |                9 |             62 |
-|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample4               |                                          |               10 |             62 |
-|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample5               |                                          |               10 |             62 |
-|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample7               |                                          |               10 |             62 |
-|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample6               |                                          |               10 |             62 |
-|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample8               |                                          |                9 |             62 |
-|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample9               |                                          |                8 |             62 |
-|  J_MIC3_Pin1_OBUF_BUFG       |                                      | unitAV/count[31]_i_1__0_n_0              |                8 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample7               |                                          |               11 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample8               |                                          |               11 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample9               |                                          |               10 |             62 |
 |  J_MIC3_Pin1_OBUF_BUFG       |                                      | nolabel_line94/count                     |                8 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG       |                                      | unitAV/count[31]_i_1__0_n_0              |                8 |             62 |
 |  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/cross0                | nolabel_line94/count                     |                8 |             62 |
 |  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample1               |                                          |                9 |             62 |
-|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample3               |                                          |                9 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample3               |                                          |                8 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample2               |                                          |                8 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample5               |                                          |                8 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample4               |                                          |                9 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/sample6               |                                          |               12 |             62 |
+|  baysis_clock_IBUF_BUFG      |                                      | unit_20khz/clear                         |                8 |             64 |
 |  baysis_clock_IBUF_BUFG      |                                      | unit_6p25m/COUNT[0]_i_1__0_n_0           |                8 |             64 |
 |  wire_clk6p25m_BUFG          | delay                                | nolabel_line92/count[31]_i_1_n_0         |                9 |             64 |
-|  baysis_clock_IBUF_BUFG      |                                      | unit_20khz/clear                         |                8 |             64 |
-|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/frequency[30]_i_1_n_0 |                                          |                9 |             64 |
-|  J_MIC3_Pin1_OBUF_BUFG       |                                      |                                          |               11 |             64 |
-|  baysis_clock_IBUF_BUFG      | led14_OBUF_BUFG                      | unitA/count                              |                8 |             64 |
 |  baysis_clock_IBUF_BUFG      | led12_OBUF_BUFG                      | unitB/count                              |                8 |             64 |
-| ~wire_clk6p25m_BUFG          | nolabel_line49/state                 |                                          |                9 |             64 |
-|  wire_clk6p25m_BUFG          |                                      |                                          |               21 |             76 |
+|  baysis_clock_IBUF_BUFG      | led14_OBUF_BUFG                      | unitA/count                              |                8 |             64 |
+|  J_MIC3_Pin1_OBUF_BUFG       |                                      |                                          |               10 |             64 |
+| ~wire_clk6p25m_BUFG          | nolabel_line49/state                 |                                          |               10 |             64 |
+|  J_MIC3_Pin1_OBUF_BUFG       | nolabel_line94/frequency[30]_i_1_n_0 |                                          |               11 |             70 |
+|  wire_clk6p25m_BUFG          |                                      |                                          |               20 |             76 |
 | ~wire_clk6p25m_BUFG          |                                      | nolabel_line49/spi_word[39]_i_1_n_0      |               15 |             90 |
 +------------------------------+--------------------------------------+------------------------------------------+------------------+----------------+
 

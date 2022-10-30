@@ -29,10 +29,11 @@ module TunerDisplay(
     );
     
     always@(posedge clock_6p25m) begin
-        if (frequency < 253) begin
-            oled_data <= 16'b0000011111100000;
-        end
-        else if(frequency >= 253 && frequency <= 258) begin // C4 flat
+//        if (frequency < 253) begin
+//            oled_data <= 16'b0000011111100000;
+//        end
+//        else 
+       if(frequency >= 253 && frequency <= 258) begin // C4 flat
             // pointer
             if ( (x == 21 || x == 22) && (y >= 9 && y <= 11) ) begin
                 oled_data <=16'b1111100000000000; end 
@@ -1252,7 +1253,7 @@ module TunerDisplay(
         
 // HIGHER OCTAVE
         
-        if(frequency >= 508 && frequency <= 520) begin // C4 flat
+        else if(frequency >= 508 && frequency <= 520) begin // C4 flat
             // pointer
             if ( (x == 21 || x == 22) && (y >= 9 && y <= 11) ) begin
                 oled_data <=16'b1111100000000000; end 
@@ -3546,6 +3547,31 @@ module TunerDisplay(
                 oled_data<=16'b0000000000000000; end
         end
         else 
-            oled_data <= 16'b0000000000011111;
-    end
+            if(y==20 && ((x>=30&&x<=33) || x==36 || x==41 ||(x>=43&&x<=49) || (x>=53&&x<=56) || (x>=59&&x<=64))) begin
+                oled_data <= 16'b1111111111111111; end
+            else if(((y>=21&&y<=22)||(y>=24&&y<=25)) &&(x==29 || x==34 || x==36 || x==41 || x==46 || x==52 || x==57 || x==59)) begin
+                oled_data <= 16'b1111111111111111; end
+            else if(y==23 && (x==29 || x==34 || x==36 || x==41 || x==46 || x==52 || x==57 || (x>=59&&x<=63))) begin
+                oled_data <= 16'b1111111111111111; end
+            else if(y==26 &&((x>=30&&x<=33) || (x>=37&&x<=40) || x == 46 || (x>=53&&x<=56)|| x==59)) begin
+                oled_data <= 16'b1111111111111111; end
+            else if(y==32 &&((x>=31&&x<=34) || (x>=38&&x<=40) || x==43 || x==48 || (x>=51&&x<=54) || (x>=57&&x<=62))) begin
+                oled_data <= 16'b1111111111111111; end
+            else if(y==33 && (x==31 || x == 35 || x == 37 || x==41 || (x>=43&&x<=44) || x==48 || x==50 || x==55 || x==57)) begin
+                oled_data <= 16'b1111111111111111; end
+            else if(y==34 && (x==31 || x == 35 || x == 37 || x==41 || (x>=43&&x<=44) || x==48 || x==50 || x==57)) begin
+                oled_data <= 16'b1111111111111111; end
+            else if(y==35 && ((x>=31&&x<=34) || x==37 || x==41 || x==43 || x==45 || x==48 || x==50 || (x>=57&&x<=62))) begin
+                oled_data <= 16'b1111111111111111; end
+            else if (y==36 && ((x>=31&&x<=32) || (x>=37 && x<=41) || x==43 || x==46 || x==48 || x==50 || (x>=53 &&x<=55)||x==57)) begin
+                oled_data <= 16'b1111111111111111; end 
+            else if(y==37 && (x==31 || x==33 || x==37 || x==41 || x== 43 || x==46 || x==48 || x==50 || x==55 || x==57)) begin
+                oled_data <= 16'b1111111111111111; end
+            else if(y==38 && (x==31 || x==34 || x==37 || x==41 || x==43 || (x>=47&&x<=48) || x==50 || x==55 || x==57)) begin
+                oled_data <= 16'b1111111111111111; end
+            else if(y==39 && (x==31 || x==35 || x==37 || x==41 || x==43 || x==48 || (x>=51&&x<=54) || (x>=57 && x<=62))) begin
+                oled_data <= 16'b1111111111111111; end
+            else begin
+                oled_data <= 16'b0000000000000000; end
+        end
 endmodule
